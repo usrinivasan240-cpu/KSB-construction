@@ -1,0 +1,50 @@
+[
+  {
+    "id": "residential",
+    "number": "01",
+    "title": "RESIDENTIAL CONSTRUCTION",
+    "description": "Custom homes designed around your lifestyle, site and requirements.",
+    "image": "/assets/service-residential.svg",
+    "highlights": ["Turnkey homes", "Site-appropriate planning", "Quality finishing"]
+  },
+  {
+    "id": "commercial",
+    "number": "02",
+    "title": "COMMERCIAL CONSTRUCTION",
+    "description": "Functional and professional spaces designed for businesses.",
+    "image": "/assets/service-commercial.svg",
+    "highlights": ["Offices & retail", "Workplace planning", "Efficient execution"]
+  },
+  {
+    "id": "renovation",
+    "number": "03",
+    "title": "RENOVATION & REMODELLING",
+    "description": "Transform existing spaces with thoughtful planning and modern finishes.",
+    "image": "/assets/service-renovation.svg",
+    "highlights": ["Space re-planning", "Modern finishes", "Minimal disruption"]
+  },
+  {
+    "id": "planning",
+    "number": "04",
+    "title": "ARCHITECTURAL PLANNING",
+    "description": "Concept development, space planning and construction coordination.",
+    "image": "/assets/service-planning.svg",
+    "highlights": ["Concept development", "Space planning", "Drawings & coordination"]
+  },
+  {
+    "id": "design",
+    "number": "05",
+    "title": "2D & 3D DESIGN",
+    "description": "Visualize your project before construction begins.",
+    "image": "/assets/service-design3d.svg",
+    "highlights": ["2D drawings", "3D visualisation", "Design iterations"]
+  },
+  {
+    "id": "structural",
+    "number": "06",
+    "title": "STRUCTURAL & CIVIL WORKS",
+    "description": "Strong, practical and carefully executed construction solutions.",
+    "image": "/assets/service-structural.svg",
+    "highlights": ["Foundations", "RCC & masonry", "Structural repairs"]
+  }
+]

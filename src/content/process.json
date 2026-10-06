@@ -1,0 +1,27 @@
+[
+  {
+    "number": "01",
+    "title": "CONSULTATION",
+    "description": "Understand your requirements, site and budget."
+  },
+  {
+    "number": "02",
+    "title": "PLANNING",
+    "description": "Develop the project approach and requirements."
+  },
+  {
+    "number": "03",
+    "title": "DESIGN",
+    "description": "Visualize the space through planning and 2D/3D design."
+  },
+  {
+    "number": "04",
+    "title": "CONSTRUCTION",
+    "description": "Execute the project with quality-focused workmanship."
+  },
+  {
+    "number": "05",
+    "title": "HANDOVER",
+    "description": "Complete finishing and deliver the space."
+  }
+]

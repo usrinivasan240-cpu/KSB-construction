@@ -1,0 +1,38 @@
+[
+  {
+    "id": "brick",
+    "title": "BRICK",
+    "subtitle": "Masonry & enclosure",
+    "image": "/assets/material-brick.svg"
+  },
+  {
+    "id": "concrete",
+    "title": "CONCRETE",
+    "subtitle": "Structure & mass",
+    "image": "/assets/material-concrete.svg"
+  },
+  {
+    "id": "steel",
+    "title": "STEEL",
+    "subtitle": "Strength & reinforcement",
+    "image": "/assets/material-steel.svg"
+  },
+  {
+    "id": "wood",
+    "title": "WOOD",
+    "subtitle": "Joinery & warmth",
+    "image": "/assets/material-wood.svg"
+  },
+  {
+    "id": "finish",
+    "title": "FINISHES",
+    "subtitle": "Surfaces & detailing",
+    "image": "/assets/material-finish.svg"
+  },
+  {
+    "id": "detail",
+    "title": "DETAILS",
+    "subtitle": "Edges, joints & reveals",
+    "image": "/assets/material-detail.svg"
+  }
+]

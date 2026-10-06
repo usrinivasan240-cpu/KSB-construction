@@ -1,0 +1,32 @@
+[
+  {
+    "number": "01",
+    "title": "QUALITY",
+    "description": "Careful attention to construction and finishing."
+  },
+  {
+    "number": "02",
+    "title": "TRANSPARENCY",
+    "description": "Clear communication throughout the project."
+  },
+  {
+    "number": "03",
+    "title": "PLANNING",
+    "description": "Thoughtful execution before construction begins."
+  },
+  {
+    "number": "04",
+    "title": "CRAFTSMANSHIP",
+    "description": "Focus on workmanship and details."
+  },
+  {
+    "number": "05",
+    "title": "RELIABILITY",
+    "description": "Professional approach from start to handover."
+  },
+  {
+    "number": "06",
+    "title": "DESIGN + EXECUTION",
+    "description": "A coordinated approach from concept to construction."
+  }
+]

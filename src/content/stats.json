@@ -1,0 +1,22 @@
+[
+  {
+    "number": "01",
+    "label": "Residential Projects",
+    "detail": "Homes, villas and custom residential builds"
+  },
+  {
+    "number": "02",
+    "label": "Commercial Projects",
+    "detail": "Workspaces, retail and professional environments"
+  },
+  {
+    "number": "03",
+    "label": "Design & Build",
+    "detail": "Planning, 2D/3D design and construction under one roof"
+  },
+  {
+    "number": "04",
+    "label": "End-to-End Execution",
+    "detail": "From first consultation to finished handover"
+  }
+]

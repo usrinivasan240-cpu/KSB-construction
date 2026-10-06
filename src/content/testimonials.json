@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t1",
+    "quote": "KSB built our home in Srirangam exactly the way the 3D design showed us. Every stage was explained before work started, and the finishing quality is something our neighbours keep asking about.",
+    "name": "Karthik Raja",
+    "project": "Residential Villa / Srirangam"
+  },
+  {
+    "id": "t2",
+    "quote": "They completed our office space on the date they promised, with a proper finishing checklist at handover. Clear billing, no surprises — that is rare in this industry.",
+    "name": "Divya Lakshmi",
+    "project": "Commercial Space / Woraiyur"
+  },
+  {
+    "id": "t3",
+    "quote": "Our old house felt dark and cramped. KSB's team reworked the layout without demolishing everything, kept the site clean throughout, and now the same house feels completely new.",
+    "name": "Mohammed Asif",
+    "project": "Renovation / Singarapettai"
+  },
+  {
+    "id": "t4",
+    "quote": "We only took their planning and 3D design service before building. The drawings were so detailed that our site engineer had zero doubts. Worth every rupee before committing to construction.",
+    "name": "Suresh Babu",
+    "project": "Planning & 3D Design / K.K. Nagar"
+  }
+]
