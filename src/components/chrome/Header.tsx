@@ -167,11 +167,11 @@ export default function Header() {
             <Image
               src={images.logo}
               alt={`${siteConfig.name} logo`}
-              width={504}
-              height={132}
+              width={747}
+              height={489}
               priority
-              className={`h-auto transition-all duration-500 ${
-                scrolled ? "w-[136px] sm:w-[150px]" : "w-[152px] sm:w-[178px]"
+              className={`w-auto transition-all duration-500 ${
+                scrolled ? "h-9 sm:h-10" : "h-11 sm:h-[52px]"
               }`}
             />
           </Link>

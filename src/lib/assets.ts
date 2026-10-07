@@ -17,10 +17,10 @@
 
 export const images = {
   /* ---------------------------------------------------------- BRAND ------ */
-  /** Original KSB logo (black + orange + deep green + white). */
-  logo: "/assets/ksb-logo.svg",
+  /** Official KSB Constructions logo (transparent PNG, 747×489). */
+  logo: "/assets/ksb-logo-official.png",
   /** Favicon / og-image source. */
-  logoMark: "/assets/ksb-logo.svg",
+  logoMark: "/assets/ksb-logo-official.png",
 
   /* ---------------------------------------------------------- HERO ------- */
   /** Full-viewport cinematic hero background — preloaded. */

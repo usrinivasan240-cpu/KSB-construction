@@ -26,9 +26,9 @@ export default function Footer() {
             <Image
               src={images.logo}
               alt={`${siteConfig.name} logo`}
-              width={504}
-              height={132}
-              className="h-auto w-[176px]"
+              width={747}
+              height={489}
+              className="h-16 w-auto"
             />
             <p className="tamil mt-5 text-[0.95rem] leading-relaxed text-copper-light">
               {siteConfig.tagline}

@@ -26,8 +26,7 @@ The brand assets were **not present on disk**, so the site uses drop-in asset sl
 
 | What | Where | Status |
 | --- | --- | --- |
-| Logo (dark backgrounds) | `public/assets/ksb-logo.svg` | ⏳ **Temporary wordmark — drop in the official logo** (same path/filename) |
-| Logo (light backgrounds) | `public/assets/ksb-logo-dark.svg` | ⏳ Light-background variant still needed |
+| Logo (all backgrounds) | `public/assets/ksb-logo-official.png` | ✅ Official transparent logo (747×489) — header, footer, transition curtain, JSON-LD |
 | Hero image | `public/assets/photos/hero.jpg` | ✅ Real photography (crane site at dusk) |
 | About image | `public/assets/photos/about.jpg` | ✅ Real photography |
 | Final CTA background | `public/assets/photos/cta.jpg` | ✅ Real photography |

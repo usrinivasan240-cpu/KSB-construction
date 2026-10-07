@@ -72,7 +72,7 @@ const jsonLd = {
   legalName: siteConfig.legalName,
   description: siteConfig.description,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/assets/ksb-logo.svg`,
+  logo: `${siteConfig.url}/assets/ksb-logo-official.png`,
   image: `${siteConfig.url}/assets/photos/hero.jpg`,
   slogan: siteConfig.taglineTranslated,
   telephone: siteConfig.phoneDisplay,

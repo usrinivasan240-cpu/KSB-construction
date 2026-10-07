@@ -129,10 +129,10 @@ export default function PageTransition() {
         <Image
           src={images.logo}
           alt="KSB Constructions"
-          width={306}
-          height={80}
+          width={747}
+          height={489}
           priority
-          className="h-auto w-[190px] sm:w-[240px]"
+          className="h-auto w-[150px] sm:w-[180px]"
         />
         <span className="label-xs text-mist-dim">நம்பிக்கை | தரம் | திறமை</span>
         <span className="h-px w-24 bg-copper/50" />
