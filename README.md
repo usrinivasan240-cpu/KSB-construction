@@ -24,18 +24,23 @@ Nothing below is real yet. Every value is intentionally marked so nothing fake s
 
 The brand assets were **not present on disk**, so the site uses drop-in asset slots.
 
-| What | Where | Replace with |
+| What | Where | Status |
 | --- | --- | --- |
-| Logo (dark backgrounds) | `public/assets/ksb-logo.svg` | The official KSB Constructions logo (same path/filename) |
-| Logo (light backgrounds) | `public/assets/ksb-logo-dark.svg` | Light-background variant |
-| Hero image | `public/assets/hero.svg` | Best cinematic project / site photograph (wide, 2400px+) |
-| About image | `public/assets/about.svg` | Team / finished interior / site photograph |
-| Final CTA background | `public/assets/cta.svg` | Architecture / site wide photograph |
-| Service hover images | `public/assets/service-*.svg` (6) | One photo per service |
-| Project images | `public/assets/project-01…06.svg` | Real project photos (portrait 4:5 crops work best) |
-| Materials close-ups | `public/assets/material-*.svg` (6) | Brick / concrete / steel / wood / finish / detail close-ups |
+| Logo (dark backgrounds) | `public/assets/ksb-logo.svg` | ⏳ **Temporary wordmark — drop in the official logo** (same path/filename) |
+| Logo (light backgrounds) | `public/assets/ksb-logo-dark.svg` | ⏳ Light-background variant still needed |
+| Hero image | `public/assets/photos/hero.jpg` | ✅ Real photography (crane site at dusk) |
+| About image | `public/assets/photos/about.jpg` | ✅ Real photography |
+| Final CTA background | `public/assets/photos/cta.jpg` | ✅ Real photography |
+| Service hover images | `public/assets/photos/service-*.jpg` (6) | ✅ Real photography, one per service |
+| Project images | `public/assets/photos/project-01…06.jpg` | ✅ Real photography (portrait 4:5 crops) |
+| Materials close-ups | `public/assets/material-*.svg` (6) | ⏳ Dark cinematic vector textures — replace with real close-ups when available |
 
-*Keep the same filename and format (`.svg` → replace with `.jpg`/`.webp` **only if** you also update `src/lib/assets.ts`, which is the single image manifest).*
+*Keep the same filename and format. To use a different file, update the path in
+**`src/lib/assets.ts`** (one file, all images).*
+
+*Photography on the site is currently free-use imagery (Unsplash License) standing
+in for KSB's own project photos — swap in real site photography anytime; the
+layout, crops and grading already assume photographic content.*
 
 **Swapping an image takes ~30 seconds:** drop the real file over the placeholder at the same path, or update the path in **`src/lib/assets.ts`** (one file, all images).
 

@@ -3,13 +3,16 @@
  * ---------------------------------------------------------------------------
  * ★ SINGLE SOURCE OF TRUTH FOR EVERY IMAGE ON THE WEBSITE ★
  *
- * The files currently in /public/assets are premium generated PLACEHOLDERS.
- * To swap in the real KSB logo and construction photography:
+ * Large surfaces use photographic imagery (/public/assets/photos/*.jpg).
+ * The KSB logo + the six small material tiles remain vector placeholders
+ * until the official logo and real close-up shots arrive:
  *
  *   1. Drop the real file into  /public/assets/  using the SAME filename.
  *   2. Done — no component, page or import needs to change.
  *
  * If you would rather use a different filename, update ONLY the map below.
+ *
+ * Photography: Unsplash (free to use under the Unsplash License).
  * =========================================================================== */
 
 export const images = {
@@ -21,22 +24,22 @@ export const images = {
 
   /* ---------------------------------------------------------- HERO ------- */
   /** Full-viewport cinematic hero background — preloaded. */
-  hero: "/assets/hero.svg",
+  hero: "/assets/photos/hero.jpg",
 
   /* ---------------------------------------------------------- SECTIONS --- */
-  about: "/assets/about.svg",
-  blueprint: "/assets/blueprint.svg",
-  interior: "/assets/interior.svg",
-  site: "/assets/site.svg",
-  cta: "/assets/cta.svg",
+  about: "/assets/photos/about.jpg",
+  blueprint: "/assets/photos/blueprint.jpg",
+  interior: "/assets/photos/interior.jpg",
+  site: "/assets/photos/site.jpg",
+  cta: "/assets/photos/cta.jpg",
 
   /* ---------------------------------------------------------- SERVICES --- */
-  serviceResidential: "/assets/service-residential.svg",
-  serviceCommercial: "/assets/service-commercial.svg",
-  serviceRenovation: "/assets/service-renovation.svg",
-  servicePlanning: "/assets/service-planning.svg",
-  serviceDesign3d: "/assets/service-design3d.svg",
-  serviceStructural: "/assets/service-structural.svg",
+  serviceResidential: "/assets/photos/service-residential.jpg",
+  serviceCommercial: "/assets/photos/service-commercial.jpg",
+  serviceRenovation: "/assets/photos/service-renovation.jpg",
+  servicePlanning: "/assets/photos/service-planning.jpg",
+  serviceDesign3d: "/assets/photos/service-design3d.jpg",
+  serviceStructural: "/assets/photos/service-structural.jpg",
 
   /* ---------------------------------------------------------- MATERIALS -- */
   materialBrick: "/assets/material-brick.svg",
@@ -49,12 +52,12 @@ export const images = {
 
 /** Project gallery images — index matches `project-XX` file numbering. */
 export const projectImages = [
-  "/assets/project-01.svg",
-  "/assets/project-02.svg",
-  "/assets/project-03.svg",
-  "/assets/project-04.svg",
-  "/assets/project-05.svg",
-  "/assets/project-06.svg",
+  "/assets/photos/project-01.jpg",
+  "/assets/photos/project-02.jpg",
+  "/assets/photos/project-03.jpg",
+  "/assets/photos/project-04.jpg",
+  "/assets/photos/project-05.jpg",
+  "/assets/photos/project-06.jpg",
 ] as const;
 
 export type ImageKey = keyof typeof images;

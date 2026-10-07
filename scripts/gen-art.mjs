@@ -401,13 +401,13 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
     for (let i = 0, y = -bh; y < h + bh; i++, y += bh) {
       const off = i % 2 ? -bw / 2 : 0;
       for (let x = off - bw; x < w + bw; x += bw) {
-        const col = mix("#3B2318", "#6E3C22", r());
+        const col = mix("#16100C", "#2B1C13", r());
         b += `<rect x="${(x + 4).toFixed(1)}" y="${(y + 4).toFixed(1)}" width="${(bw - 8).toFixed(1)}" height="${(
           bh - 8
-        ).toFixed(1)}" rx="2" fill="${col}" opacity="${(0.74 + r() * 0.3).toFixed(2)}"/>`;
+        ).toFixed(1)}" rx="2" fill="${col}" opacity="${(0.8 + r() * 0.2).toFixed(2)}"/>`;
         b += `<rect x="${(x + 4).toFixed(1)}" y="${(y + 4).toFixed(1)}" width="${(bw - 8).toFixed(1)}" height="${(
           bh * 0.2
-        ).toFixed(1)}" rx="2" fill="${C.copper3}" opacity="${(r() * 0.11).toFixed(2)}"/>`;
+        ).toFixed(1)}" rx="2" fill="${C.copper3}" opacity="${(r() * 0.07).toFixed(2)}"/>`;
       }
     }
   } else if (kind === "concrete") {
@@ -416,14 +416,14 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
     for (let i = 0; i < 6; i++) {
       const x = (i % 3) * pw;
       const y = Math.floor(i / 3) * ph;
-      b += `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="${i % 2 ? "#1F2422" : "#1A1F1D"}" opacity="0.85"/>`;
-      b += `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="none" stroke="#0B0D0C" stroke-width="5" opacity="0.85"/>`;
+      b += `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="${i % 2 ? "#141715" : "#101312"}" opacity="0.9"/>`;
+      b += `<rect x="${x}" y="${y}" width="${pw}" height="${ph}" fill="none" stroke="#080A09" stroke-width="5" opacity="0.9"/>`;
       for (let a = 0; a < 3; a++)
         for (let c = 0; c < 2; c++) {
           const cx = x + pw * (0.24 + a * 0.26);
           const cy = y + ph * (0.3 + c * 0.4);
-          b += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(w * 0.012).toFixed(1)}" fill="#0C0F0E"/>`;
-          b += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(w * 0.012).toFixed(1)}" fill="none" stroke="#333A36" stroke-width="2.4"/>`;
+          b += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(w * 0.012).toFixed(1)}" fill="#070908"/>`;
+          b += `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(w * 0.012).toFixed(1)}" fill="none" stroke="#222825" stroke-width="2.4"/>`;
         }
     }
     for (let i = 0; i < 44; i++) {
@@ -433,11 +433,13 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
       ).toFixed(0)}" fill="#000" opacity="${(0.03 + r() * 0.08).toFixed(2)}"/>`;
     }
   } else if (kind === "steel") {
+    // Dark brushed steel plates with a single copper rim-light edge.
+    // (No geometric beams — those read as broken clip-art at large sizes.)
     const bar = d.lin(
       [
-        [0, "#2E3A41"],
-        [0.5, "#485A64"],
-        [1, "#212A2F"],
+        [0, "#161D21"],
+        [0.5, "#232D33"],
+        [1, "#0E1316"],
       ],
       "0%",
       "0%",
@@ -445,9 +447,9 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
       "0%",
     );
     const barV = d.lin([
-      [0, "#2A343A"],
-      [0.5, "#40515A"],
-      [1, "#1E262A"],
+      [0, "#141A1E"],
+      [0.5, "#20292F"],
+      [1, "#0D1114"],
     ]);
     const g = w / 11;
     for (let i = 0; i <= 13; i++) {
@@ -456,23 +458,19 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
       for (let k = 0; k < 60; k++)
         b += `<rect x="${(k * (w / 60)).toFixed(1)}" y="${p.toFixed(1)}" width="${(g * 0.09).toFixed(
           1,
-        )}" height="${(g * 0.26).toFixed(1)}" fill="#0C1012" opacity="0.55"/>`;
+        )}" height="${(g * 0.26).toFixed(1)}" fill="#070A0B" opacity="0.55"/>`;
     }
     for (let j = 0; j <= 13; j++) {
       const p = j * g;
       b += `<rect x="0" y="${p.toFixed(1)}" width="${w}" height="${(g * 0.26).toFixed(1)}" fill="url(#${bar})"/>`;
     }
-    b +=
-      `<g transform="rotate(-14 ${w / 2} ${h / 2})">` +
-      `<rect x="${-w * 0.1}" y="${h * 0.38}" width="${w * 1.3}" height="${h * 0.24}" fill="#222A2F"/>` +
-      `<rect x="${-w * 0.1}" y="${h * 0.38}" width="${w * 1.3}" height="9" fill="#4E5F68"/>` +
-      `<rect x="${-w * 0.1}" y="${h * 0.61}" width="${w * 1.3}" height="9" fill="#3A474E"/>` +
-      `<rect x="${-w * 0.1}" y="${h * 0.49}" width="${w * 1.3}" height="${h * 0.012}" fill="#3A474E"/>` +
-      `</g>`;
+    // copper rim-light: one vertical highlight edge
+    b += `<rect x="${(w * 0.62).toFixed(1)}" y="0" width="5" height="${h}" fill="${C.copper1}" opacity="0.5"/>`;
+    b += `<rect x="${(w * 0.62 + 5).toFixed(1)}" y="0" width="22" height="${h}" fill="${C.copper1}" opacity="0.12"/>`;
   } else if (kind === "wood") {
     const pw = w / 7;
     for (let x = -pw * 0.4; x < w + pw; x += pw) {
-      const col = mix("#33251A", "#4E3722", r());
+      const col = mix("#1D140E", "#31221A", r());
       b += `<rect x="${x.toFixed(1)}" y="-12" width="${(pw - 6).toFixed(1)}" height="${h + 24}" fill="${col}"/>`;
       b += `<rect x="${(x + pw - 7).toFixed(1)}" y="-12" width="7" height="${h + 24}" fill="#0B0907" opacity="0.72"/>`;
       for (let k = 0; k < 15; k++) {
@@ -516,7 +514,7 @@ function material(kind, { w = 1400, h = 1400, seed = 11 } = {}) {
       const py = h * 0.9 - t2;
       b += `<path d="M${px.toFixed(1)} ${py.toFixed(1)} l${(w * 0.2).toFixed(1)} 0 l0 ${(-h * 0.055).toFixed(
         1,
-      )} l${(-w * 0.2).toFixed(1)} 0 Z" fill="${i % 2 ? "#232825" : "#191E1B"}" stroke="#0A0C0B" stroke-width="2"/>`;
+      )} l${(-w * 0.2).toFixed(1)} 0 Z" fill="${i % 2 ? "#141715" : "#0D100E"}" stroke="#070908" stroke-width="2"/>`;
       b += `<rect x="${px.toFixed(1)}" y="${(py - h * 0.055).toFixed(1)}" width="${(w * 0.2).toFixed(1)}" height="5" fill="${
         C.copper2
       }" opacity="0.6"/>`;

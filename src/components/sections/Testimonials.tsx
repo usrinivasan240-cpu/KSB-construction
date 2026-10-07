@@ -4,9 +4,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { testimonials } from "@/lib/content";
 
 /**
- * Testimonial carousel.
- * ⚠ Every entry in /src/content/testimonials.json is a placeholder — swap in
- * genuine client reviews before launch. Nothing here is invented.
+ * Testimonial carousel (stacked crossfade).
+ * Slides are layered in a single grid cell and crossfade — so the layout
+ * never shows half-sliced text mid-transition. Height stays locked to the
+ * tallest slide, so the card never jumps between reviews.
+ * NOTE: entries in /src/content/testimonials.json are sample data — swap in
+ * genuine client reviews before launch.
  */
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
@@ -94,16 +97,18 @@ export default function Testimonials() {
                 ”
               </span>
 
-              <div className="relative min-h-[16rem] sm:min-h-[15rem]">
-                <div
-                  className="flex transition-transform duration-700 ease-[var(--ease-arch)]"
-                  style={{ transform: `translateX(-${index * 100}%)` }}
-                >
-                  {testimonials.map((item) => (
+              <div className="relative grid min-h-[16rem] sm:min-h-[15rem]">
+                {testimonials.map((item, i) => {
+                  const active = i === index;
+                  return (
                     <figure
                       key={item.id}
-                      className="w-full shrink-0"
-                      aria-hidden={testimonials[index].id !== item.id}
+                      aria-hidden={!active}
+                      className={`col-start-1 row-start-1 transition-all duration-700 ease-[var(--ease-arch)] ${
+                        active
+                          ? "visible relative z-10 translate-y-0 opacity-100"
+                          : "invisible pointer-events-none translate-y-6 opacity-0"
+                      }`}
                     >
                       <div
                         className="mb-6 flex gap-1 text-copper"
@@ -125,8 +130,8 @@ export default function Testimonials() {
                         <span className="label-xs text-copper/70">{item.project}</span>
                       </figcaption>
                     </figure>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
 
               {/* dot indicators */}

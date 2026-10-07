@@ -4,7 +4,7 @@
     "number": "01",
     "title": "RESIDENTIAL CONSTRUCTION",
     "description": "Custom homes designed around your lifestyle, site and requirements.",
-    "image": "/assets/service-residential.svg",
+    "image": "/assets/photos/service-residential.jpg",
     "highlights": ["Turnkey homes", "Site-appropriate planning", "Quality finishing"]
   },
   {
@@ -12,7 +12,7 @@
     "number": "02",
     "title": "COMMERCIAL CONSTRUCTION",
     "description": "Functional and professional spaces designed for businesses.",
-    "image": "/assets/service-commercial.svg",
+    "image": "/assets/photos/service-commercial.jpg",
     "highlights": ["Offices & retail", "Workplace planning", "Efficient execution"]
   },
   {
@@ -20,7 +20,7 @@
     "number": "03",
     "title": "RENOVATION & REMODELLING",
     "description": "Transform existing spaces with thoughtful planning and modern finishes.",
-    "image": "/assets/service-renovation.svg",
+    "image": "/assets/photos/service-renovation.jpg",
     "highlights": ["Space re-planning", "Modern finishes", "Minimal disruption"]
   },
   {
@@ -28,7 +28,7 @@
     "number": "04",
     "title": "ARCHITECTURAL PLANNING",
     "description": "Concept development, space planning and construction coordination.",
-    "image": "/assets/service-planning.svg",
+    "image": "/assets/photos/service-planning.jpg",
     "highlights": ["Concept development", "Space planning", "Drawings & coordination"]
   },
   {
@@ -36,7 +36,7 @@
     "number": "05",
     "title": "2D & 3D DESIGN",
     "description": "Visualize your project before construction begins.",
-    "image": "/assets/service-design3d.svg",
+    "image": "/assets/photos/service-design3d.jpg",
     "highlights": ["2D drawings", "3D visualisation", "Design iterations"]
   },
   {
@@ -44,7 +44,7 @@
     "number": "06",
     "title": "STRUCTURAL & CIVIL WORKS",
     "description": "Strong, practical and carefully executed construction solutions.",
-    "image": "/assets/service-structural.svg",
+    "image": "/assets/photos/service-structural.jpg",
     "highlights": ["Foundations", "RCC & masonry", "Structural repairs"]
   }
 ]
