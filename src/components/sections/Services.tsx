@@ -52,12 +52,12 @@ export default function Services() {
               <div className="absolute inset-0 -z-10 opacity-[0.18] transition-opacity duration-700 ease-[var(--ease-arch)] sm:opacity-0 sm:group-hover:opacity-100">
                 <div className="absolute inset-0 overflow-hidden">
                   <div
-                    className="absolute inset-0 scale-110 bg-cover bg-center transition-transform duration-[1.4s] ease-[var(--ease-arch)] group-hover:scale-100"
+                    className="absolute inset-0 scale-110 bg-cover bg-center brightness-[0.42] grayscale-[28%] contrast-[0.92] transition-transform duration-[1.4s] ease-[var(--ease-arch)] group-hover:scale-100"
                     style={{ backgroundImage: `url(${s.image})` }}
                   />
                 </div>
-                <div className="absolute inset-0 bg-ink-deep/78" />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.55)_0%,rgba(7,9,8,0.9)_100%)]" />
+                <div className="absolute inset-0 bg-ink-deep/85" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.62)_0%,rgba(7,9,8,0.94)_100%)]" />
               </div>
 
               {/* top row: index + arrow */}
