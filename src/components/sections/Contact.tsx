@@ -33,7 +33,7 @@ const BUDGETS = [
 type Status = "idle" | "sending" | "sent" | "whatsapp" | "error";
 
 const fieldBase =
-  "w-full border-b border-bone/20 bg-transparent py-3 text-[0.95rem] text-bone outline-none transition-colors duration-300 placeholder:text-mist-dim/70 focus:border-copper";
+  "w-full border-b border-bone/20 bg-transparent py-3 text-base text-bone outline-none transition-colors duration-300 placeholder:text-mist-dim/70 focus:border-copper";
 const labelBase = "label-xs mb-2 block text-mist-dim";
 
 function Field({

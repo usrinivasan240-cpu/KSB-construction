@@ -50,6 +50,17 @@
     --header-h-sm: 68px;
   }
 
+  html {
+    /* Never allow sideways page scroll from full-bleed layers on small screens */
+    overflow-x: clip;
+    /* Stop iOS Safari auto-inflating text after orientation change */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
   * {
     border-color: var(--color-ink-line);
   }

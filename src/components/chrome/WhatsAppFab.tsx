@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { siteConfig, whatsappUrl } from "@/lib/site.config";
 
 function WhatsAppGlyph({ className = "" }: { className?: string }) {
@@ -32,6 +32,22 @@ export default function WhatsAppFab() {
     readScrollYOnServer,
   );
   const show = scrollY > 420;
+  // Hide the sticky mobile bar while the footer (which has its own contact
+  // actions) is on screen — otherwise it covers the copyright line.
+  const [atFooter, setAtFooter] = useState(false);
+
+  useEffect(() => {
+    const footer = document.querySelector("footer");
+    if (!footer) return;
+    const io = new IntersectionObserver(
+      ([entry]) => setAtFooter(entry.isIntersecting),
+      { threshold: 0 },
+    );
+    io.observe(footer);
+    return () => io.disconnect();
+  }, []);
+
+  const mobileShow = show && !atFooter;
 
   return (
     <>
@@ -59,17 +75,17 @@ export default function WhatsAppFab() {
       <div
         className="fixed inset-x-0 bottom-0 z-[750] border-t border-bone/12 bg-ink-deep/95 px-4 py-3 backdrop-blur-xl transition-transform duration-500 md:hidden"
         style={{
-          transform: show ? "translateY(0)" : "translateY(110%)",
+          transform: mobileShow ? "translateY(0)" : "translateY(110%)",
           paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))",
         }}
-        aria-hidden={!show}
+        aria-hidden={!mobileShow}
       >
         <a
           href={whatsappUrl()}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-solid w-full !py-4 !text-[0.6875rem]"
-          tabIndex={show ? 0 : -1}
+          tabIndex={mobileShow ? 0 : -1}
         >
           <WhatsAppGlyph className="h-4 w-4" />
           Chat on WhatsApp

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, isTouch, prefersReducedMotion } from "@/lib/gsap";
 import { images } from "@/lib/assets";
 import { aboutCopy } from "@/lib/content";
 
@@ -16,7 +16,7 @@ export default function About() {
 
   useEffect(() => {
     const el = root.current;
-    if (!el || prefersReducedMotion()) return;
+    if (!el || prefersReducedMotion() || isTouch()) return;
 
     const ctx = gsap.context(() => {
       gsap.utils.toArray<HTMLElement>("[data-parallax]").forEach((node) => {

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { gsap, prefersReducedMotion } from "@/lib/gsap";
+import { gsap, isTouch, prefersReducedMotion } from "@/lib/gsap";
 import { materials, materialsCopy } from "@/lib/content";
 
 /**
@@ -14,7 +14,7 @@ export default function Materials() {
 
   useEffect(() => {
     const el = root.current;
-    if (!el || prefersReducedMotion()) return;
+    if (!el || prefersReducedMotion() || isTouch()) return;
 
     const ctx = gsap.context(() => {
       el.querySelectorAll<HTMLElement>("[data-tile-img]").forEach((img) => {
