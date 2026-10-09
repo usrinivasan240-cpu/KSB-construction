@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { gsap, prefersReducedMotion } from "@/lib/gsap";
 import { images } from "@/lib/assets";
-import { heroCopy } from "@/lib/content";
+import { credibilityStats, heroCopy } from "@/lib/content";
 
 /**
  * Cinematic full-viewport hero.
- * Entrance sequence: image 105% → 100%, headline line-by-line, then CTAs and
- * the scroll cue. Everything is hidden *by GSAP only*, so with JS disabled the
- * copy is still fully readable.
+ * Entrance sequence: image 105% → 100%, headline line-by-line, then CTAs,
+ * credibility stats (with count-up) and the scroll cue. Everything is hidden
+ * *by GSAP only*, so with JS disabled the copy is still fully readable.
  */
 export default function Hero() {
   const root = useRef<HTMLElement | null>(null);
@@ -53,6 +53,24 @@ export default function Hero() {
           { y: 0, opacity: 1, duration: 1, stagger: 0.09, ease: "power3.out" },
           0.85,
         );
+
+      // Credibility numbers count up after the headline lands.
+      // Final values are already in the markup, so reduced-motion / no-JS
+      // visitors see the true figures with no animation at all.
+      el.querySelectorAll<HTMLElement>("[data-count]").forEach((node, k) => {
+        const target = Number(node.dataset.count);
+        if (!Number.isFinite(target)) return;
+        const obj = { v: 0 };
+        gsap.to(obj, {
+          v: target,
+          duration: 1.8,
+          delay: 1.05 + k * 0.12,
+          ease: "power2.out",
+          onUpdate: () => {
+            node.textContent = String(Math.round(obj.v));
+          },
+        });
+      });
 
       // Slow parallax drift on the background as the hero leaves the viewport
       gsap.to(media, {
@@ -130,7 +148,7 @@ export default function Hero() {
             <span key={line} className="block overflow-hidden pb-[0.06em]">
               <span
                 data-hero-line
-                className={`block ${i === 2 ? "text-copper-light" : ""}`}
+                className={`block ${i === heroCopy.headline.length - 1 ? "text-copper-light" : ""}`}
               >
                 {line}
               </span>
@@ -164,6 +182,31 @@ export default function Hero() {
             </Link>
           </div>
         </div>
+
+        {/* -------------------------------------- credibility statistics */}
+        <dl
+          aria-label="KSB Constructions track record"
+          className="mt-9 grid grid-cols-2 gap-x-6 gap-y-7 border-t border-bone/12 pt-7 sm:mt-10 lg:grid-cols-4"
+        >
+          {credibilityStats.map((s) => (
+            <div
+              key={s.id}
+              data-hero-fade
+              className="flex flex-col lg:border-l lg:border-bone/12 lg:pl-6 lg:first:border-l-0 lg:first:pl-0"
+            >
+              <dt className="label-xs order-2 mt-2.5 text-mist-dim">{s.label}</dt>
+              <dd className="order-1 font-display text-4xl leading-none text-bone sm:text-[2.75rem]">
+                {s.prefix ? (
+                  <span className="mr-2 align-middle text-[0.65rem] font-bold tracking-[0.24em] text-copper">
+                    {s.prefix}
+                  </span>
+                ) : null}
+                <span data-count={s.countUp ? s.value : undefined}>{s.value}</span>
+                {s.suffix ? <span className="text-copper">{s.suffix}</span> : null}
+              </dd>
+            </div>
+          ))}
+        </dl>
       </div>
 
       {/* ------------------------------------------------ scroll cue */}

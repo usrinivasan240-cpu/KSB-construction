@@ -1,0 +1,34 @@
+[
+  {
+    "id": "est",
+    "prefix": "EST.",
+    "value": 2019,
+    "suffix": "",
+    "label": "Established",
+    "countUp": false
+  },
+  {
+    "id": "journey",
+    "prefix": "",
+    "value": 7,
+    "suffix": "",
+    "label": "Years of Company Journey",
+    "countUp": true
+  },
+  {
+    "id": "experience",
+    "prefix": "",
+    "value": 10,
+    "suffix": "+",
+    "label": "Years Industry Experience",
+    "countUp": true
+  },
+  {
+    "id": "projects",
+    "prefix": "",
+    "value": 50,
+    "suffix": "+",
+    "label": "Projects Completed",
+    "countUp": true
+  }
+]

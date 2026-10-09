@@ -75,6 +75,7 @@ const jsonLd = {
   logo: `${siteConfig.url}/assets/ksb-logo-official.png`,
   image: `${siteConfig.url}/assets/photos/hero.jpg`,
   slogan: siteConfig.taglineTranslated,
+  foundingDate: "2019",
   telephone: siteConfig.phoneDisplay,
   email: siteConfig.email,
   priceRange: "₹₹₹",

@@ -5,6 +5,7 @@ import whyJson from "@/content/why.json";
 import materialsJson from "@/content/materials.json";
 import testimonialsJson from "@/content/testimonials.json";
 import statsJson from "@/content/stats.json";
+import credibilityJson from "@/content/credibility.json";
 
 /* ===========================================================================
  * TYPED CONTENT LAYER
@@ -45,6 +46,14 @@ export type WhyReason = { number: string; title: string; description: string };
 export type Material = { id: string; title: string; subtitle: string; image: string };
 export type Testimonial = { id: string; quote: string; name: string; project: string };
 export type Stat = { number: string; label: string; detail: string };
+export type CredibilityStat = {
+  id: string;
+  prefix: string;
+  value: number;
+  suffix: string;
+  label: string;
+  countUp: boolean;
+};
 
 export const services = servicesJson as Service[];
 export const projects = projectsJson as Project[];
@@ -53,6 +62,7 @@ export const whyReasons = whyJson as WhyReason[];
 export const materials = materialsJson as Material[];
 export const testimonials = testimonialsJson as Testimonial[];
 export const stats = statsJson as Stat[];
+export const credibilityStats = credibilityJson as CredibilityStat[];
 
 export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);
@@ -70,9 +80,9 @@ export function adjacentProjects(slug: string) {
 /* ------------------------------------------------------------ page copy ---- */
 export const heroCopy = {
   eyebrow: ["KSB CONSTRUCTIONS", "TRICHY • TAMIL NADU"],
-  headline: ["BUILDING", "SPACES THAT", "LAST."],
+  headline: ["WE BUILD", "WHAT LASTS."],
   supporting:
-    "From strong foundations to refined finishes, we build spaces designed for life.",
+    "From strong foundations to exceptional finishes, we build spaces designed for life.",
   primaryCta: "START YOUR PROJECT",
   secondaryCta: "VIEW OUR WORK",
   scroll: "SCROLL TO EXPLORE",
