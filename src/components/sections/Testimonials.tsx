@@ -111,7 +111,7 @@ export default function Testimonials() {
                       }`}
                     >
                       <div
-                        className="mb-6 flex gap-1 text-copper"
+                        className="mb-6 flex gap-1 text-gilt"
                         aria-label="Five star review"
                       >
                         {Array.from({ length: 5 }).map((_, s) => (

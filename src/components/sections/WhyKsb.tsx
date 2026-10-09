@@ -11,7 +11,7 @@ export default function WhyKsb() {
     >
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(217,123,59,0.55),transparent)]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(247,148,29,0.55),transparent)]"
         aria-hidden="true"
       />
       <div

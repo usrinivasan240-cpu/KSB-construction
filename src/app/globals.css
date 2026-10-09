@@ -2,8 +2,8 @@
 
 /* ===========================================================================
    KSB CONSTRUCTIONS — DESIGN SYSTEM
-   Dark luxury architectural theme
-   BLACK · ORANGE · DEEP GREEN · WHITE
+   Dark luxury architectural theme, drawn from the official logo:
+   BLACK · LOGO ORANGE #F7941D · LOGO YELLOW #FFD91A · GRAPHITE GREY · WHITE
    =========================================================================== */
 
 @theme {
@@ -13,23 +13,26 @@
   --color-ink-soft: #101413;
   --color-ink-line: #1c211e;
 
-  /* --- deep forest green -------------------------------------------------- */
-  --color-forest: #0f1a14;
-  --color-forest-2: #16241b;
-  --color-forest-3: #1e3325;
-  --color-forest-4: #2a4633;
-  --color-forest-mute: #6f887a;
+  /* --- graphite grey (logo grey #A7A9AC deepened; replaces forest green) -- */
+  --color-forest: #101416;
+  --color-forest-2: #171d20;
+  --color-forest-3: #222a2e;
+  --color-forest-4: #2f3a40;
+  --color-forest-mute: #8b9494;
 
-  /* --- copper / construction orange -------------------------------------- */
-  --color-copper: #d97b3b;
-  --color-copper-deep: #b75f28;
-  --color-copper-dark: #7a3f1d;
-  --color-copper-light: #f0a765;
+  /* --- logo orange / construction amber ----------------------------------- */
+  --color-copper: #f7941d;
+  --color-copper-deep: #c05e14;
+  --color-copper-dark: #7e3f10;
+  --color-copper-light: #ffc53d;
+
+  /* --- logo yellow spark (tiny doses: numerals, stars) -------------------- */
+  --color-gilt: #ffd91a;
 
   /* --- neutrals ----------------------------------------------------------- */
   --color-bone: #efeae2;
-  --color-mist: #a9b1ab;
-  --color-mist-dim: #6f7873;
+  --color-mist: #a9aba6;
+  --color-mist-dim: #71716c;
 
   /* --- type --------------------------------------------------------------- */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -151,15 +154,15 @@ section[id] {
 /* Architectural grid background ------------------------------------------ */
 @utility grid-bg {
   background-image:
-    linear-gradient(to right, rgba(42, 70, 51, 0.28) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(42, 70, 51, 0.28) 1px, transparent 1px);
+    linear-gradient(to right, rgba(70, 82, 88, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(70, 82, 88, 0.3) 1px, transparent 1px);
   background-size: clamp(56px, 7vw, 108px) clamp(56px, 7vw, 108px);
 }
 
 @utility grid-bg-fine {
   background-image:
-    linear-gradient(to right, rgba(42, 70, 51, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(42, 70, 51, 0.2) 1px, transparent 1px);
+    linear-gradient(to right, rgba(70, 82, 88, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(70, 82, 88, 0.22) 1px, transparent 1px);
   background-size: 34px 34px;
 }
 
@@ -473,10 +476,10 @@ section[id] {
 [data-step][data-active="true"] .step-dot {
   background: var(--color-copper);
   border-color: var(--color-copper);
-  box-shadow: 0 0 0 7px rgba(217, 123, 59, 0.13);
+  box-shadow: 0 0 0 7px rgba(247, 148, 29, 0.13);
 }
 [data-step][data-active="true"] .step-num {
-  color: rgba(217, 123, 59, 0.55);
+  color: rgba(247, 148, 29, 0.55);
 }
 [data-step][data-active="true"] .step-title {
   color: var(--color-copper-light);

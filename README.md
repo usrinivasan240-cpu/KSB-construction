@@ -114,12 +114,13 @@ src/
 
 ## Design system
 
-| Token | Value |
-| --- | --- |
-| Background | `#0B0D0C` (`ink`), `ink-deep`, `ink-soft` |
-| Secondary | deep forest green (`forest` … `forest-4`) |
-| Accent | warm construction copper/orange (`copper #D97B3B`, `copper-light #F0A765`) |
-| Text | `bone #EFEAE2`, `mist`, `mist-dim` |
+| Token | Value | Source |
+| --- | --- | --- |
+| Background | `#0B0D0C` (`ink`) | neutral near-black |
+| Secondary | graphite grey (`forest` … `forest-4`, now grey not green) | logo grey `#A7A9AC` deepened |
+| Accent | logo orange `#F7941D` (`copper`), amber `#FFC53D` (`copper-light`) | sampled from official logo |
+| Spark | logo yellow `#FFD91A` (`gilt`) — numerals, stars only | sampled from official logo |
+| Text | `bone #EFEAE2`, `mist`, `mist-dim` | warm neutrals |
 | Type | **Inter** (UI) + **Playfair Display** (architectural headlines) + Tamil fallback stack |
 | Motion ease | `--ease-arch: cubic-bezier(.16,1,.3,1)` |
 

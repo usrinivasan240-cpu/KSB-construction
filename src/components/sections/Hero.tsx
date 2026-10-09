@@ -108,7 +108,7 @@ export default function Hero() {
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-[radial-gradient(120%_90%_at_15%_20%,rgba(15,26,20,0.55)_0%,transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(120%_90%_at_15%_20%,rgba(32,36,38,0.55)_0%,transparent_60%)]"
         aria-hidden="true"
       />
       {/* architectural vertical rules */}
@@ -202,7 +202,7 @@ export default function Hero() {
                   </span>
                 ) : null}
                 <span data-count={s.countUp ? s.value : undefined}>{s.value}</span>
-                {s.suffix ? <span className="text-copper">{s.suffix}</span> : null}
+                {s.suffix ? <span className="text-gilt">{s.suffix}</span> : null}
               </dd>
             </div>
           ))}

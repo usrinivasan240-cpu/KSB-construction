@@ -20,13 +20,13 @@ const OUT = join(HERE, "..", "public", "assets");
 const C = {
   ink: "#070908",
   black: "#0B0D0C",
-  green0: "#0C130F",
-  green1: "#101A14",
-  green4: "#2A4633",
-  copper0: "#7A3F1D",
-  copper1: "#B75F28",
-  copper2: "#D97B3B",
-  copper3: "#F0A765",
+  green0: "#0E1214",
+  green1: "#12181A",
+  green4: "#2F3A40",
+  copper0: "#7E3F10",
+  copper1: "#C05E14",
+  copper2: "#F7941D",
+  copper3: "#FFC53D",
   bone: "#EFEAE2",
 };
 
