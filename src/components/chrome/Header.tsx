@@ -25,7 +25,7 @@ export default function Header() {
 
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState<string>(onHome ? "#home" : "");
+  const [active, setActive] = useState<string>(onHome ? "#home" : pathname);
 
   /* ---------------------------- scroll state + active section spy (shared
      rAF pass — the spy finds whichever nav section owns the viewport centre
@@ -142,7 +142,8 @@ export default function Header() {
       .to(menu, { autoAlpha: 0, clipPath: "inset(0 0 100% 0)", duration: 0.5, ease: "expo.inOut" }, "-=0.12");
   };
 
-  const hrefFor = (href: string) => (onHome ? href : `/${href}`);
+  const hrefFor = (href: string) =>
+    href.startsWith("/") ? href : onHome ? href : `/${href}`;
 
   return (
     <>
@@ -195,7 +196,7 @@ export default function Header() {
                 key={item.href}
                 href={hrefFor(item.href)}
                 className="nav-link"
-                data-active={active === item.href && onHome ? "true" : "false"}
+                data-active={active === item.href ? "true" : "false"}
               >
                 {item.label}
               </Link>
@@ -257,12 +258,12 @@ export default function Header() {
                 <Link
                   href={hrefFor(item.href)}
                   onClick={closeMenu}
-                  aria-current={active === item.href && onHome ? "page" : undefined}
+                  aria-current={active === item.href ? "page" : undefined}
                   className="group flex items-baseline justify-between border-b border-bone/10 py-4"
                 >
                   <span
                     className={`display-md transition-colors duration-300 group-hover:text-copper-light ${
-                      active === item.href && onHome ? "text-copper" : "text-bone"
+                      active === item.href ? "text-copper" : "text-bone"
                     }`}
                   >
                     {item.label}

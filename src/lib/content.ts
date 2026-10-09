@@ -6,6 +6,7 @@ import materialsJson from "@/content/materials.json";
 import testimonialsJson from "@/content/testimonials.json";
 import statsJson from "@/content/stats.json";
 import credibilityJson from "@/content/credibility.json";
+import galleryJson from "@/content/gallery.json";
 
 /* ===========================================================================
  * TYPED CONTENT LAYER
@@ -63,6 +64,8 @@ export const materials = materialsJson as Material[];
 export const testimonials = testimonialsJson as Testimonial[];
 export const stats = statsJson as Stat[];
 export const credibilityStats = credibilityJson as CredibilityStat[];
+export type GalleryImage = { id: string; src: string; title: string; tag: string };
+export const galleryImages = galleryJson as GalleryImage[];
 
 export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);

@@ -13,7 +13,8 @@ export default function Footer() {
   const pathname = usePathname();
   // On the home page in-page anchors scroll smoothly; from any other route we
   // have to return home first.
-  const hrefFor = (hash: string) => (pathname === "/" ? hash : `/${hash}`);
+  const hrefFor = (hash: string) =>
+    hash.startsWith("/") ? hash : pathname === "/" ? hash : `/${hash}`;
 
   return (
     <footer className="relative overflow-hidden border-t border-bone/10 bg-ink-deep">

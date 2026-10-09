@@ -119,6 +119,7 @@ export const nav = [
   { label: "ABOUT", href: "#about" },
   { label: "SERVICES", href: "#services" },
   { label: "PROJECTS", href: "#projects" },
+  { label: "GALLERY", href: "/gallery" },
   { label: "PROCESS", href: "#process" },
   { label: "WHY KSB", href: "#why" },
   { label: "CONTACT", href: "#contact" },

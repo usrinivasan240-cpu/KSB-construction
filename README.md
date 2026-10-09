@@ -97,6 +97,7 @@ src/
 │   ├── layout.tsx            fonts, metadata, JSON-LD (LocalBusiness + ConstructionCompany), chrome
 │   ├── page.tsx              home — all sections
 │   ├── projects/[slug]/      full case-study page (SSG, 6 routes)
+│   ├── gallery/page.tsx      real-photo showcase: masonry + filters + lightbox
 │   ├── sitemap.ts  robots.ts
 │   ├── globals.css           design tokens + custom utilities (@theme / @utility)
 ├── components/

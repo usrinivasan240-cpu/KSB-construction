@@ -1,0 +1,12 @@
+[
+  { "id": "g01", "src": "/assets/photos/real/house-02-night-wide.jpg", "title": "Night Elevation — Stone & Pergola", "tag": "Exterior" },
+  { "id": "g02", "src": "/assets/photos/real/house-01-night-portrait.jpg", "title": "Night Elevation — Facade & Gate", "tag": "Exterior" },
+  { "id": "g03", "src": "/assets/photos/real/house-03-tv-unit.jpg", "title": "Living — Marble TV Wall", "tag": "Interior" },
+  { "id": "g04", "src": "/assets/photos/real/house-04-night-angle.jpg", "title": "Night Elevation — Warm Washers", "tag": "Exterior" },
+  { "id": "g05", "src": "/assets/photos/real/house-08-ksb-board.jpg", "title": "Handover Ready — KSB Site Board", "tag": "Exterior" },
+  { "id": "g06", "src": "/assets/photos/real/house-09-day-pink.jpg", "title": "Day Elevation — Colour Facade", "tag": "Exterior" },
+  { "id": "g07", "src": "/assets/photos/real/house-10-day-blue.jpg", "title": "Day Elevation — Tiled Finish", "tag": "Exterior" },
+  { "id": "g08", "src": "/assets/photos/real/house-05-dusk-finishing.jpg", "title": "Finishing Stage at Dusk", "tag": "Exterior" },
+  { "id": "g09", "src": "/assets/photos/real/house-06-evening-colour.jpg", "title": "Evening Elevation", "tag": "Exterior" },
+  { "id": "g10", "src": "/assets/photos/real/house-07-day-gate.jpg", "title": "Front Gate — Day", "tag": "Exterior" }
+]
