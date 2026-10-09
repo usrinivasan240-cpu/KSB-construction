@@ -37,9 +37,10 @@ The brand assets were **not present on disk**, so the site uses drop-in asset sl
 *Keep the same filename and format. To use a different file, update the path in
 **`src/lib/assets.ts`** (one file, all images).*
 
-*Photography on the site is currently free-use imagery (Unsplash License) standing
-in for KSB's own project photos — swap in real site photography anytime; the
-layout, crops and grading already assume photographic content.*
+*Photography: `public/assets/photos/real/house-*.jpg` are genuine KSB completed-home
+photos (supplied Oct 2026) — residential villa page + galleries, About section,
+and the residential/renovation service cards. Remaining `photos/*.jpg` are
+free-use stand-ins (Unsplash License) awaiting KSB site photography.*
 
 **Swapping an image takes ~30 seconds:** drop the real file over the placeholder at the same path, or update the path in **`src/lib/assets.ts`** (one file, all images).
 

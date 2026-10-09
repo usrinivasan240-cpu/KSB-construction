@@ -27,7 +27,7 @@ export const images = {
   hero: "/assets/photos/hero.jpg",
 
   /* ---------------------------------------------------------- SECTIONS --- */
-  about: "/assets/photos/about.jpg",
+  about: "/assets/photos/real/house-04-night-angle.jpg",
   blueprint: "/assets/photos/blueprint.jpg",
   interior: "/assets/photos/interior.jpg",
   site: "/assets/photos/site.jpg",

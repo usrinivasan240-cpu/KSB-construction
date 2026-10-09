@@ -4,7 +4,7 @@
     "number": "01",
     "title": "RESIDENTIAL CONSTRUCTION",
     "description": "Custom homes designed around your lifestyle, site and requirements.",
-    "image": "/assets/photos/service-residential.jpg",
+    "image": "/assets/photos/real/house-01-night-portrait.jpg",
     "highlights": ["Turnkey homes", "Site-appropriate planning", "Quality finishing"]
   },
   {
@@ -20,7 +20,7 @@
     "number": "03",
     "title": "RENOVATION & REMODELLING",
     "description": "Transform existing spaces with thoughtful planning and modern finishes.",
-    "image": "/assets/photos/service-renovation.jpg",
+    "image": "/assets/photos/real/house-03-tv-unit.jpg",
     "highlights": ["Space re-planning", "Modern finishes", "Minimal disruption"]
   },
   {
