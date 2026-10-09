@@ -98,7 +98,7 @@ export default function GalleryGrid() {
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(7,9,8,0.85)_100%)] opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+                  className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(6,11,16,0.85)_100%)] opacity-80 transition-opacity duration-500 group-hover:opacity-100"
                 />
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-5">

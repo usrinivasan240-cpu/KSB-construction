@@ -54,7 +54,7 @@ export default function FinalCta() {
           data-cta-media
         />
       </div>
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.94)_0%,rgba(7,9,8,0.72)_45%,rgba(7,9,8,0.96)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.94)_0%,rgba(6,11,16,0.72)_45%,rgba(6,11,16,0.96)_100%)]" />
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-45" aria-hidden="true" />
 
       <div className="shell relative z-10 py-24 text-center">

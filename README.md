@@ -27,7 +27,7 @@ The brand assets were **not present on disk**, so the site uses drop-in asset sl
 | What | Where | Status |
 | --- | --- | --- |
 | Logo (all backgrounds) | `public/assets/ksb-logo-official.png` | ✅ Official transparent logo (747×489) — header, footer, transition curtain, JSON-LD |
-| Hero image | `public/assets/photos/hero.jpg` | ✅ Real photography (crane site at dusk) |
+| Hero image | `public/assets/photos/real/house-09-day-pink.jpg` | ✅ Real KSB home (pink/yellow day elevation) |
 | About image | `public/assets/photos/about.jpg` | ✅ Real photography |
 | Final CTA background | `public/assets/photos/cta.jpg` | ✅ Real photography |
 | Service hover images | `public/assets/photos/service-*.jpg` (6) | ✅ Real photography, one per service |

@@ -86,7 +86,7 @@ export default async function ProjectPage({
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.9)_0%,rgba(7,9,8,0.4)_42%,rgba(7,9,8,0.97)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16),0.9)_0%,rgba(6,11,16),0.4)_42%,rgba(6,11,16),0.97)_100%)]" />
         <div className="grid-bg pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
 
         <div className="shell relative z-10">
@@ -173,7 +173,7 @@ export default async function ProjectPage({
                     data-reveal-img
                   />
                 </div>
-                <figcaption className="label-xs absolute bottom-0 left-0 right-0 bg-[linear-gradient(180deg,transparent,rgba(7,9,8,0.9))] p-5 text-mist-dim sm:p-7">
+                <figcaption className="label-xs absolute bottom-0 left-0 right-0 bg-[linear-gradient(180deg,transparent,rgba(6,11,16),0.9))] p-5 text-mist-dim sm:p-7">
                   {project.title} — {block.label}
                 </figcaption>
               </figure>

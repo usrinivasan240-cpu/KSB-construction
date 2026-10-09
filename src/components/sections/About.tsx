@@ -105,7 +105,7 @@ export default function About() {
                   data-parallax="10"
                   data-reveal-img
                 />
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(200deg,transparent_35%,rgba(7,9,8,0.75)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(200deg,transparent_35%,rgba(6,11,16,0.75)_100%)]" />
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 border-t border-bone/15 bg-ink-deep/70 p-5 backdrop-blur-sm">
                   <div>
                     <p className="label-xs text-copper">Trichy • Tamil Nadu</p>

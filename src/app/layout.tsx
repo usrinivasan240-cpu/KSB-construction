@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [{ url: "/assets/photos/hero.jpg", width: 2400, height: 1500, alt: siteConfig.name }],
+    images: [{ url: "/assets/photos/real/house-09-day-pink.jpg", width: 1440, height: 1440, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ["/assets/photos/hero.jpg"],
+    images: ["/assets/photos/real/house-09-day-pink.jpg"],
   },
   robots: {
     index: true,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0B0D0C",
+  themeColor: "#0a1118",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -73,7 +73,7 @@ const jsonLd = {
   description: siteConfig.description,
   url: siteConfig.url,
   logo: `${siteConfig.url}/assets/ksb-logo-official.png`,
-  image: `${siteConfig.url}/assets/photos/hero.jpg`,
+  image: `${siteConfig.url}/assets/photos/real/house-09-day-pink.jpg`,
   slogan: siteConfig.taglineTranslated,
   foundingDate: "2019",
   telephone: siteConfig.phoneDisplay,

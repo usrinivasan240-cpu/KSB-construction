@@ -101,7 +101,7 @@ export default function Projects() {
                   className="object-cover transition-transform duration-[1.4s] ease-[var(--ease-arch)] group-hover:scale-[1.06]"
                 />
               </div>
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.15)_0%,rgba(7,9,8,0.55)_55%,rgba(7,9,8,0.94)_100%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.15)_0%,rgba(6,11,16,0.55)_55%,rgba(6,11,16,0.94)_100%)]" />
 
               {/* index + arrow */}
               <div className="absolute inset-x-0 top-0 flex items-start justify-between p-6">

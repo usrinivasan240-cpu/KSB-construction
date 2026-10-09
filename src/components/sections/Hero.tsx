@@ -141,7 +141,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src={images.hero}
-          alt="Construction site at dusk — steel, concrete and scaffolding"
+          alt="Completed KSB home in daylight — colourful modern elevation"
           fill
           priority
           sizes="100vw"
@@ -152,7 +152,7 @@ export default function Hero() {
       </div>
       {/* cinematic grading */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.86)_0%,rgba(7,9,8,0.36)_38%,rgba(7,9,8,0.78)_78%,rgba(7,9,8,0.97)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.9)_0%,rgba(6,11,16,0.55)_38%,rgba(6,11,16,0.85)_78%,rgba(6,11,16,0.97)_100%)]"
         aria-hidden="true"
       />
       <div
@@ -250,7 +250,7 @@ export default function Hero() {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.55)_0%,rgba(7,9,8,0.9)_100%)]"
+            className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.55)_0%,rgba(6,11,16,0.9)_100%)]"
           />
           <dl
             aria-label="KSB Constructions track record"

@@ -24,7 +24,7 @@ export const images = {
 
   /* ---------------------------------------------------------- HERO ------- */
   /** Full-viewport cinematic hero background — preloaded. */
-  hero: "/assets/photos/hero.jpg",
+  hero: "/assets/photos/real/house-09-day-pink.jpg",
 
   /* ---------------------------------------------------------- SECTIONS --- */
   about: "/assets/photos/real/house-04-night-angle.jpg",

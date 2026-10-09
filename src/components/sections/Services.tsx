@@ -57,7 +57,7 @@ export default function Services() {
                   />
                 </div>
                 <div className="absolute inset-0 bg-ink-deep/85" />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.62)_0%,rgba(7,9,8,0.94)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.62)_0%,rgba(6,11,16,0.94)_100%)]" />
               </div>
 
               {/* top row: index + arrow */}

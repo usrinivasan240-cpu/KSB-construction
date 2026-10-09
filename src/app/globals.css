@@ -7,11 +7,11 @@
    =========================================================================== */
 
 @theme {
-  /* --- surfaces ---------------------------------------------------------- */
-  --color-ink: #0b0d0c;
-  --color-ink-deep: #070908;
-  --color-ink-soft: #101413;
-  --color-ink-line: #1c211e;
+  /* --- surfaces: deep slate blue (stable, non-pure black) ----------------- */
+  --color-ink: #0a1118;
+  --color-ink-deep: #060b10;
+  --color-ink-soft: #0d151d;
+  --color-ink-line: #1c2833;
 
   /* --- graphite grey (logo grey #A7A9AC deepened; replaces forest green) -- */
   --color-forest: #101416;
@@ -84,7 +84,7 @@
 
   ::selection {
     background: var(--color-copper);
-    color: #0b0d0c;
+    color: #0a1118;
   }
 
   h1,
@@ -275,7 +275,7 @@ section[id] {
 
 .btn:hover,
 .btn:focus-visible {
-  color: #0b0d0c;
+  color: #0a1118;
   border-color: var(--color-copper);
 }
 
@@ -296,7 +296,7 @@ section[id] {
 @utility btn-primary {
   background: var(--color-copper);
   border-color: var(--color-copper);
-  color: #0b0d0c;
+  color: #0a1118;
 }
 
 .btn-primary::before {
@@ -305,14 +305,14 @@ section[id] {
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  color: #0b0d0c;
+  color: #0a1118;
   border-color: var(--color-bone);
 }
 
 @utility btn-solid {
   background: var(--color-copper);
   border-color: var(--color-copper);
-  color: #0b0d0c;
+  color: #0a1118;
 }
 .btn-solid::before {
   background: var(--color-bone);

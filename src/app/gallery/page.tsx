@@ -47,7 +47,7 @@ export default function GalleryPage() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.72)_0%,rgba(7,9,8,0.55)_45%,rgba(7,9,8,0.97)_100%)]"
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.72)_0%,rgba(6,11,16,0.55)_45%,rgba(6,11,16,0.97)_100%)]"
         />
         <div
           aria-hidden="true"

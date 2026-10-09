@@ -91,7 +91,7 @@ export default function Materials() {
                     className="object-cover transition-transform duration-[1.4s] ease-[var(--ease-arch)] group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,9,8,0.1)_0%,rgba(7,9,8,0.86)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.1)_0%,rgba(6,11,16,0.86)_100%)]" />
               </div>
 
               <figcaption className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
