@@ -4,7 +4,7 @@
     "prefix": "EST.",
     "value": 2019,
     "suffix": "",
-    "label": "Established",
+    "label": "Established in 2019",
     "countUp": false
   },
   {
@@ -20,7 +20,7 @@
     "prefix": "",
     "value": 10,
     "suffix": "+",
-    "label": "Years Industry Experience",
+    "label": "Years of Industry Experience",
     "countUp": true
   },
   {

@@ -162,7 +162,7 @@ export default function Header() {
             href="/"
             data-head-in
             aria-label={`${siteConfig.name} — home`}
-            className="group relative flex shrink-0 items-center"
+            className="group relative flex shrink-0 flex-col items-start justify-center"
           >
             <Image
               src={images.logo}
@@ -174,6 +174,14 @@ export default function Header() {
                 scrolled ? "h-9 sm:h-10" : "h-11 sm:h-[52px]"
               }`}
             />
+            <span
+              aria-hidden="true"
+              className={`tamil overflow-hidden whitespace-nowrap text-[0.55rem] leading-tight tracking-wide text-copper-light/90 transition-all duration-500 ${
+                scrolled ? "max-h-0 opacity-0" : "mt-1 max-h-5 opacity-100"
+              }`}
+            >
+              {siteConfig.tagline}
+            </span>
           </Link>
 
           {/* --------------------------------------------- primary nav */}
@@ -198,7 +206,7 @@ export default function Header() {
           <div data-head-in className="flex items-center gap-3 sm:gap-4">
             <Link
               href={onHome ? "#contact" : "/#contact"}
-              className="btn hidden border-copper/45 text-copper-light !px-6 !py-3.5 !text-[0.625rem] xl:inline-flex"
+              className="btn btn-primary hidden rounded-lg !px-6 !py-3.5 !text-[0.625rem] xl:inline-flex"
             >
               Start your project
               <span className="btn-arrow" aria-hidden="true">
