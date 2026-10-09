@@ -35,11 +35,11 @@ export const siteConfig = {
 
   /* ---------------------------------------------------------- CONTACT ---- */
   // [SAMPLE DATA] Replace with the real company phone number before launch.
-  phoneDisplay: "+91 98424 12345",
-  phoneHref: "tel:+919842412345",
+  phoneDisplay: "+91 88384 61175",
+  phoneHref: "tel:+918838461175",
   // [SAMPLE DATA] WhatsApp number in INTERNATIONAL format, digits only, no "+".
   // The floating button, mobile sticky CTA and every "WhatsApp Us" button use it.
-  whatsappNumber: "919842412345",
+  whatsappNumber: "918838461175",
   whatsappMessage:
     "Hi KSB Constructions, I would like to discuss a construction project.",
   // [SAMPLE DATA] Replace with the real company e-mail before launch.

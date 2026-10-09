@@ -257,9 +257,14 @@ export default function Header() {
                 <Link
                   href={hrefFor(item.href)}
                   onClick={closeMenu}
+                  aria-current={active === item.href && onHome ? "page" : undefined}
                   className="group flex items-baseline justify-between border-b border-bone/10 py-4"
                 >
-                  <span className="display-md text-bone transition-colors duration-300 group-hover:text-copper-light">
+                  <span
+                    className={`display-md transition-colors duration-300 group-hover:text-copper-light ${
+                      active === item.href && onHome ? "text-copper" : "text-bone"
+                    }`}
+                  >
                     {item.label}
                   </span>
                   <span className="label-xs text-copper/70">
@@ -271,18 +276,23 @@ export default function Header() {
           </nav>
 
           <div className="mt-10 space-y-5">
-            <div data-menu-item>
+            <div data-menu-item className="grid grid-cols-2 gap-3">
+              <a
+                href={siteConfig.phoneHref}
+                onClick={closeMenu}
+                aria-label={`Call KSB Constructions at ${siteConfig.phoneDisplay}`}
+                className="btn w-full !px-4"
+              >
+                Call now
+              </a>
               <Link
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-solid w-full"
                 onClick={closeMenu}
+                className="btn btn-solid w-full !px-4"
               >
-                Chat on WhatsApp
-                <span className="btn-arrow" aria-hidden="true">
-                  →
-                </span>
+                WhatsApp
               </Link>
             </div>
             <div data-menu-item className="space-y-2 border-t border-bone/10 pt-5">
