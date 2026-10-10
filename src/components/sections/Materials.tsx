@@ -66,7 +66,7 @@ export default function Materials() {
         </div>
 
         {/* -------------------------------------------------------- tiles */}
-        <div className="mt-12 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-6">
+        <div className="mt-12 grid grid-cols-2 items-start gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-6">
           {materials.map((m, i) => (
             <figure
               key={m.id}
