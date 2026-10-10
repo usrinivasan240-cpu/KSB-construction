@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { FormEvent, ReactNode } from "react";
 import ElevationLines from "@/components/decor/ElevationLines";
+import SelectField from "@/components/sections/SelectField";
 import { siteConfig, whatsappUrl } from "@/lib/site.config";
 
 const PROJECT_TYPES = [
@@ -345,51 +346,33 @@ export default function Contact() {
 
                 <div className="grid gap-7 sm:grid-cols-2">
                   <Field label="Project type">
-                    <select
+                    <SelectField
                       name="projectType"
                       value={form.projectType}
-                      onChange={(e) => update("projectType")(e.target.value)}
-                      className={`${fieldBase} appearance-none [&>option]:bg-ink-deep`}
-                    >
-                      <option value="">Select a service</option>
-                      {PROJECT_TYPES.map((o) => (
-                        <option key={o} value={o}>
-                          {o}
-                        </option>
-                      ))}
-                    </select>
+                      placeholder="Select a service"
+                      options={PROJECT_TYPES}
+                      onChange={update("projectType")}
+                    />
                   </Field>
                   <Field label="Plot / property status">
-                    <select
+                    <SelectField
                       name="plotStatus"
                       value={form.plotStatus}
-                      onChange={(e) => update("plotStatus")(e.target.value)}
-                      className={`${fieldBase} appearance-none [&>option]:bg-ink-deep`}
-                    >
-                      <option value="">Select status</option>
-                      {PLOT_STATUS.map((o) => (
-                        <option key={o} value={o}>
-                          {o}
-                        </option>
-                      ))}
-                    </select>
+                      placeholder="Select status"
+                      options={PLOT_STATUS}
+                      onChange={update("plotStatus")}
+                    />
                   </Field>
                 </div>
 
                 <Field label="Approximate budget">
-                  <select
+                  <SelectField
                     name="budget"
                     value={form.budget}
-                    onChange={(e) => update("budget")(e.target.value)}
-                    className={`${fieldBase} appearance-none [&>option]:bg-ink-deep`}
-                  >
-                    <option value="">Select a range</option>
-                    {BUDGETS.map((o) => (
-                      <option key={o} value={o}>
-                        {o}
-                      </option>
-                    ))}
-                  </select>
+                    placeholder="Select a range"
+                    options={BUDGETS}
+                    onChange={update("budget")}
+                  />
                 </Field>
 
                 <Field label="Message">
