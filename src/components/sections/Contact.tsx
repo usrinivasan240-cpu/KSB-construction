@@ -34,8 +34,8 @@ const BUDGETS = [
 type Status = "idle" | "sending" | "sent" | "whatsapp" | "error";
 
 const fieldBase =
-  "w-full border-b border-bone/20 bg-transparent py-3 text-base text-bone outline-none transition-colors duration-300 placeholder:text-mist-dim/70 focus:border-copper";
-const labelBase = "label-xs mb-2 block text-mist-dim";
+  "w-full border-b border-bone/35 bg-transparent py-3 text-base text-bone outline-none transition-colors duration-300 placeholder:text-[#8A7D68] focus:border-copper";
+const labelBase = "label-xs mb-2 block text-[#776B58]";
 
 function Field({
   label,
@@ -239,7 +239,7 @@ export default function Contact() {
 
         {/* ------------------------------------------------------ right */}
         <div className="lg:col-span-6 lg:col-start-7" data-reveal>
-          <div className="relative border border-bone/12 bg-ink-soft/70 p-6 backdrop-blur-sm sm:p-9">
+          <div className="relative border border-bone/12 bg-white p-6 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.45)] sm:p-9">
             <span
               className="pointer-events-none absolute right-6 top-3 select-none font-display text-[5rem] leading-none text-bone/[0.05]"
               aria-hidden="true"
@@ -266,7 +266,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="btn btn-primary mt-7"
                   >
-                    Re-open WhatsApp
+                    Open WhatsApp
                     <span className="btn-arrow" aria-hidden="true">
                       ↗
                     </span>
@@ -415,13 +415,13 @@ export default function Contact() {
                     disabled={status === "sending"}
                     className="btn btn-primary w-full !py-4 disabled:opacity-60 sm:w-auto"
                   >
-                    {status === "sending" ? "Sending…" : "Send project enquiry"}
+                    {status === "sending" ? "Sending…" : "Send via WhatsApp"}
                     <span className="btn-arrow" aria-hidden="true">
-                      →
+                      ↗
                     </span>
                   </button>
                   <p className="text-[0.7rem] leading-relaxed text-mist-dim sm:max-w-[22ch]">
-                    We reply within one working day.
+                    Opens WhatsApp with your enquiry, addressed to {siteConfig.phoneDisplay}.
                   </p>
                 </div>
               </form>
