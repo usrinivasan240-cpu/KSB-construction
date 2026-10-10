@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent, ReactNode } from "react";
+import ElevationLines from "@/components/decor/ElevationLines";
 import { siteConfig, whatsappUrl } from "@/lib/site.config";
 
 const PROJECT_TYPES = [
@@ -126,8 +127,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-pad relative overflow-hidden bg-ink">
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
+    <section id="contact" className="section-pad forest-depth noise-layer relative overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(232,117,18,0.6),transparent)]"
+        aria-hidden="true"
+      />
+      <ElevationLines className="pointer-events-none absolute -right-28 bottom-0 h-[26rem] w-auto text-[#F6F2EA] opacity-[0.07]" />
       <div
         className="pointer-events-none absolute -left-32 bottom-0 h-[30rem] w-[30rem] rounded-full bg-copper/15 blur-[150px]"
         aria-hidden="true"
@@ -141,32 +146,32 @@ export default function Contact() {
             Contact
           </p>
 
-          <h2 className="display-lg text-bone">
+          <h2 className="display-lg text-[#F6F2EA]">
             <span data-reveal-line className="block">
               <span>LET&apos;S BUILD</span>
             </span>
             <span data-reveal-line className="block">
-              <span className="text-copper-deep">TOGETHER.</span>
+              <span className="text-copper-light">TOGETHER.</span>
             </span>
           </h2>
 
-          <p className="lead mt-7 max-w-md !text-[0.95rem]" data-reveal>
+          <p className="lead mt-7 max-w-md !text-[0.95rem] !text-[#D8CFBC]" data-reveal>
             Tell us about your site, your timeline and what you want to build —
             we will come back with a clear next step.
           </p>
 
           {/* contact rows */}
-          <dl className="mt-10 divide-y divide-bone/10 border-y border-bone/10" data-reveal>
+          <dl className="mt-10 divide-y divide-[#F6F2EA]/15 border-y border-[#F6F2EA]/15" data-reveal>
             <div className="flex items-start gap-4 py-4">
               <dt className="label-xs w-20 shrink-0 text-copper/70">Location</dt>
-              <dd className="text-sm text-bone">{siteConfig.addressDisplay}</dd>
+              <dd className="text-sm text-[#F6F2EA]">{siteConfig.addressDisplay}</dd>
             </div>
             <div className="flex items-start gap-4 py-4">
               <dt className="label-xs w-20 shrink-0 text-copper/70">Phone</dt>
               <dd>
                 <a
                   href={siteConfig.phoneHref}
-                  className="text-sm text-bone transition-colors duration-300 hover:text-copper"
+                  className="text-sm text-[#F6F2EA] transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
@@ -177,7 +182,7 @@ export default function Contact() {
               <dd className="min-w-0">
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="break-all text-sm text-bone transition-colors duration-300 hover:text-copper"
+                  className="break-all text-sm text-[#F6F2EA] transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.email}
                 </a>
@@ -190,7 +195,7 @@ export default function Contact() {
                   href={whatsappUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-bone transition-colors duration-300 hover:text-copper"
+                  className="text-sm text-[#F6F2EA] transition-colors duration-300 hover:text-copper"
                 >
                   Chat with us →
                 </a>
@@ -201,15 +206,15 @@ export default function Contact() {
           {/* hours */}
           <div className="mt-6 space-y-1" data-reveal>
             {siteConfig.hours.map((h) => (
-              <p key={h.days} className="text-xs text-mist-dim">
-                <span className="text-mist">{h.days}</span> — {h.time}
+              <p key={h.days} className="text-xs text-[#B9C4B2]">
+                <span className="text-[#F6F2EA]">{h.days}</span> — {h.time}
               </p>
             ))}
           </div>
 
           {/* map */}
           <div
-            className="mt-9 overflow-hidden border border-bone/12"
+            className="mt-9 overflow-hidden border border-[#F6F2EA]/15"
             data-reveal
             data-cursor="image"
           >
@@ -224,7 +229,7 @@ export default function Contact() {
               href={siteConfig.mapLinkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="label-xs flex items-center justify-between border-t border-bone/12 px-4 py-3 text-mist-dim transition-colors duration-300 hover:text-copper"
+              className="label-xs flex items-center justify-between border-t border-[#F6F2EA]/15 bg-[#0B2019]/60 px-4 py-3 text-[#B9C4B2] transition-colors duration-300 hover:text-copper"
             >
               Open in Google Maps
               <span aria-hidden="true">↗</span>

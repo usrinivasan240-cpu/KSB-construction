@@ -7,22 +7,22 @@
    =========================================================================== */
 
 @theme {
-  /* --- surfaces: warm paper + sand (light architectural theme) -------------- */
-  --color-ink: #faf6ef;
-  --color-ink-deep: #efe7d8;
+  /* --- surfaces: warm architectural ivory --------------------------------- */
+  --color-ink: #f6f2ea;
+  --color-ink-deep: #ede3d0;
   --color-ink-soft: #ffffff;
-  --color-ink-line: #ddd2bd;
+  --color-ink-line: #d8ccba;
   --color-coal: #241a0e;
 
-  /* --- graphite grey (logo grey #A7A9AC deepened; replaces forest green) -- */
-  --color-forest: #101416;
-  --color-forest-2: #171d20;
-  --color-forest-3: #222a2e;
-  --color-forest-4: #2f3a40;
-  --color-forest-mute: #8b9494;
+  /* --- graphite grey (logo grey #A7A9AC deepened; grid lines) -------------- */
+  --color-forest: #102c23;
+  --color-forest-2: #16402f;
+  --color-forest-3: #1e5240;
+  --color-forest-4: #2a6b52;
+  --color-forest-mute: #7fa08f;
 
   /* --- logo orange / construction amber (deepened for light surfaces) ------ */
-  --color-copper: #de7f16;
+  --color-copper: #e87512;
   --color-copper-deep: #b45a10;
   --color-copper-dark: #7e3f10;
   --color-copper-light: #ffc53d;
@@ -30,10 +30,10 @@
   /* --- logo yellow spark (tiny doses: numerals, stars) -------------------- */
   --color-gilt: #ffd91a;
 
-  /* --- neutrals: warm espresso ink text ----------------------------------- */
-  --color-bone: #231b12;
-  --color-mist: #635949;
-  --color-mist-dim: #9a8e79;
+  /* --- neutrals: warm charcoal ink text ----------------------------------- */
+  --color-bone: #211f1b;
+  --color-mist: #5e5548;
+  --color-mist-dim: #9a9081;
 
   /* --- type --------------------------------------------------------------- */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -165,6 +165,32 @@ section[id] {
     linear-gradient(to right, rgba(70, 82, 88, 0.22) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(70, 82, 88, 0.22) 1px, transparent 1px);
   background-size: 34px 34px;
+}
+
+/* Warm ivory light — soft top light + faint limestone mottling ------------- */
+@utility ivory-light {
+  background:
+    radial-gradient(110% 70% at 50% 0%, rgba(255, 255, 255, 0.9) 0%, transparent 55%),
+    radial-gradient(90% 60% at 85% 100%, rgba(216, 204, 186, 0.35) 0%, transparent 60%),
+    radial-gradient(70% 50% at 8% 90%, rgba(216, 204, 186, 0.28) 0%, transparent 60%);
+}
+
+/* Forest depth — copper glow over deep green for dark contrast bands ------- */
+@utility forest-depth {
+  background:
+    radial-gradient(80% 55% at 50% 0%, rgba(232, 117, 18, 0.14) 0%, transparent 60%),
+    radial-gradient(70% 60% at 90% 110%, rgba(0, 0, 0, 0.4) 0%, transparent 60%),
+    linear-gradient(180deg, #14382b 0%, #102c23 40%, #0b2019 100%);
+}
+
+/* Slow architectural drift for silhouette layers -------------------------- */
+@keyframes ksb-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-2.5%, -1.5%, 0);
+  }
 }
 
 /* Film grain overlay ------------------------------------------------------ */

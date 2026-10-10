@@ -60,7 +60,7 @@ export default function Process() {
       id="process"
       className="section-pad relative overflow-hidden bg-ink-deep"
     >
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-45" aria-hidden="true" />
+      {/* timeline carries the detailing here — no backdrop texture */}
       <div
         className="pointer-events-none absolute right-[-10rem] top-10 h-[30rem] w-[30rem] rounded-full bg-copper/10 blur-[150px]"
         aria-hidden="true"

@@ -18,7 +18,7 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-bone/10 bg-ink-deep">
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-[0.35]" aria-hidden="true" />
+      {/* clean close — no backdrop texture */}
 
       <div className="shell relative pb-10 pt-16 sm:pt-20">
         <div className="grid gap-12 lg:grid-cols-12">

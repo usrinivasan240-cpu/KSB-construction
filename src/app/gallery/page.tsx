@@ -86,11 +86,7 @@ export default function GalleryPage() {
       </header>
 
       {/* ------------------------------------------------------------ grid */}
-      <section aria-label="All project photographs" className="section-pad relative bg-ink">
-        <div
-          aria-hidden="true"
-          className="grid-bg pointer-events-none absolute inset-0 opacity-30"
-        />
+      <section aria-label="All project photographs" className="section-pad ivory-light relative bg-ink">
         <div className="shell relative">
           <GalleryGrid />
         </div>

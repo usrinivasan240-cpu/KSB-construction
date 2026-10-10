@@ -37,7 +37,7 @@ export default function Testimonials() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
+      {/* sand band + white card carry this section — no backdrop texture */}
 
       <div className="shell relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">

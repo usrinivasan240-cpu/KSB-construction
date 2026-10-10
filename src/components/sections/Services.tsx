@@ -12,9 +12,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="section-pad relative overflow-hidden bg-ink-deep"
+      className="section-pad ivory-light relative overflow-hidden bg-ink-deep"
     >
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-50" aria-hidden="true" />
+      {/* soft top light, no grid — cards carry the texture here */}
 
       <div className="shell relative">
         {/* ------------------------------------------------------ heading */}
@@ -40,13 +40,13 @@ export default function Services() {
         </div>
 
         {/* --------------------------------------------------------- grid */}
-        <div className="grid border-t border-l border-bone/12 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {services.map((s) => (
             <article
               key={s.id}
               data-reveal
               data-cursor="image"
-              className="group relative isolate flex min-h-[20rem] flex-col justify-between overflow-hidden border-b border-r border-bone/12 p-7 transition-transform duration-500 ease-[var(--ease-arch)] hover:z-10 sm:p-8"
+              className="group relative isolate flex min-h-[20rem] flex-col justify-between overflow-hidden rounded-xl border border-bone/15 bg-white/70 p-7 shadow-[0_24px_55px_-32px_rgba(33,27,18,0.35)] transition-all duration-500 ease-[var(--ease-arch)] hover:-translate-y-1.5 hover:bg-white hover:shadow-[0_34px_70px_-28px_rgba(33,27,18,0.4)] sm:p-8"
             >
               {/* background image — faint on touch devices, full on hover (desktop) */}
               <div className="absolute inset-0 -z-10 opacity-[0.18] transition-opacity duration-700 ease-[var(--ease-arch)] sm:opacity-0 sm:group-hover:opacity-100">

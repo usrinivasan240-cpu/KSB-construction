@@ -55,7 +55,7 @@ export default function FinalCta() {
         />
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.94)_0%,rgba(6,11,16,0.72)_45%,rgba(6,11,16,0.96)_100%)]" />
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-45" aria-hidden="true" />
+      {/* photography carries this section — no backdrop texture */}
 
       <div className="shell relative z-10 py-24 text-center">
         <p className="eyebrow mb-8 inline-flex items-center gap-3" data-reveal>

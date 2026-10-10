@@ -6,6 +6,7 @@ import Link from "next/link";
 import { gsap, isTouch, prefersReducedMotion } from "@/lib/gsap";
 import { images } from "@/lib/assets";
 import { aboutCopy } from "@/lib/content";
+import ElevationLines from "@/components/decor/ElevationLines";
 
 /**
  * "WHO WE ARE" — editorial split layout over a subtle blueprint grid, with the
@@ -45,11 +46,10 @@ export default function About() {
     <section
       ref={root}
       id="about"
-      className="section-pad noise-layer relative overflow-hidden bg-ink"
+      className="section-pad noise-layer ivory-light relative overflow-hidden bg-ink"
     >
-      {/* blueprint drafting background */}
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-70" aria-hidden="true" />
-      <div className="grid-bg-fine pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
+      {/* faint elevation drafting — single architectural silhouette */}
+      <ElevationLines className="pointer-events-none absolute -right-24 top-1/2 h-[34rem] w-auto -translate-y-1/2 text-copper opacity-[0.1]" />
       <div
         className="pointer-events-none absolute -left-40 top-1/4 h-[36rem] w-[36rem] rounded-full bg-copper/15 blur-[140px]"
         aria-hidden="true"

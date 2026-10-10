@@ -40,7 +40,7 @@ export default function Materials() {
 
   return (
     <section ref={root} className="section-pad relative overflow-hidden bg-ink">
-      <div className="grid-bg pointer-events-none absolute inset-0 opacity-35" aria-hidden="true" />
+      {/* tiles are the texture — backdrop stays clean */}
 
       <div className="shell relative">
         {/* ------------------------------------------------------ heading */}
