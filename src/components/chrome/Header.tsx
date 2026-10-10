@@ -177,7 +177,7 @@ export default function Header() {
             />
             <span
               aria-hidden="true"
-              className={`tamil overflow-hidden whitespace-nowrap text-[0.55rem] leading-tight tracking-wide text-copper-light/90 transition-all duration-500 ${
+              className={`tamil tagline-tamil overflow-hidden whitespace-nowrap text-[0.55rem] leading-tight tracking-wide transition-all duration-500 text-copper-deep/90 ${
                 scrolled ? "max-h-0 opacity-0" : "mt-1 max-h-5 opacity-100"
               }`}
             >
@@ -222,15 +222,15 @@ export default function Header() {
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label={open ? "Close menu" : "Open menu"}
-              className="group relative z-10 flex h-11 w-11 flex-col items-center justify-center gap-[6px] border border-bone/15 bg-ink/40 backdrop-blur-md transition-colors duration-300 hover:border-copper lg:hidden"
+              className="hamb-btn group relative z-10 flex h-11 w-11 flex-col items-center justify-center gap-[6px] border border-bone/15 bg-ink/40 backdrop-blur-md transition-colors duration-300 hover:border-copper lg:hidden"
             >
               <span
-                className={`block h-px w-5 bg-bone transition-all duration-400 ${
+                className={`hamb-line block h-px w-5 bg-bone transition-all duration-400 ${
                   open ? "translate-y-[3.5px] rotate-45" : ""
                 }`}
               />
               <span
-                className={`block h-px w-5 bg-bone transition-all duration-400 ${
+                className={`hamb-line block h-px w-5 bg-bone transition-all duration-400 ${
                   open ? "-translate-y-[3.5px] -rotate-45" : ""
                 }`}
               />
@@ -262,7 +262,7 @@ export default function Header() {
                   className="group flex items-baseline justify-between border-b border-bone/10 py-4"
                 >
                   <span
-                    className={`display-md transition-colors duration-300 group-hover:text-copper-light ${
+                    className={`display-md transition-colors duration-300 group-hover:text-copper ${
                       active === item.href ? "text-copper" : "text-bone"
                     }`}
                   >

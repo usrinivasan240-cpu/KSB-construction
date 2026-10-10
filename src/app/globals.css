@@ -7,11 +7,12 @@
    =========================================================================== */
 
 @theme {
-  /* --- surfaces: deep slate blue (stable, non-pure black) ----------------- */
-  --color-ink: #0a1118;
-  --color-ink-deep: #060b10;
-  --color-ink-soft: #0d151d;
-  --color-ink-line: #1c2833;
+  /* --- surfaces: warm paper + sand (light architectural theme) -------------- */
+  --color-ink: #faf6ef;
+  --color-ink-deep: #efe7d8;
+  --color-ink-soft: #ffffff;
+  --color-ink-line: #ddd2bd;
+  --color-coal: #241a0e;
 
   /* --- graphite grey (logo grey #A7A9AC deepened; replaces forest green) -- */
   --color-forest: #101416;
@@ -20,19 +21,19 @@
   --color-forest-4: #2f3a40;
   --color-forest-mute: #8b9494;
 
-  /* --- logo orange / construction amber ----------------------------------- */
-  --color-copper: #f7941d;
-  --color-copper-deep: #c05e14;
+  /* --- logo orange / construction amber (deepened for light surfaces) ------ */
+  --color-copper: #de7f16;
+  --color-copper-deep: #b45a10;
   --color-copper-dark: #7e3f10;
   --color-copper-light: #ffc53d;
 
   /* --- logo yellow spark (tiny doses: numerals, stars) -------------------- */
   --color-gilt: #ffd91a;
 
-  /* --- neutrals ----------------------------------------------------------- */
-  --color-bone: #efeae2;
-  --color-mist: #a9aba6;
-  --color-mist-dim: #71716c;
+  /* --- neutrals: warm espresso ink text ----------------------------------- */
+  --color-bone: #231b12;
+  --color-mist: #635949;
+  --color-mist-dim: #9a8e79;
 
   /* --- type --------------------------------------------------------------- */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -214,7 +215,7 @@ section[id] {
   font-style: italic;
   text-transform: none;
   letter-spacing: -0.01em;
-  color: var(--color-copper-light);
+  color: var(--color-copper-deep);
 }
 
 @utility lead {
@@ -252,9 +253,9 @@ section[id] {
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  border: 1px solid rgba(239, 234, 226, 0.24);
+  border: 1px solid rgba(35, 27, 18, 0.3);
   color: var(--color-bone);
-  background: rgba(11, 13, 12, 0.35);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(8px);
   transition:
     color 0.45s var(--ease-arch),
@@ -300,7 +301,7 @@ section[id] {
 }
 
 .btn-primary::before {
-  background: var(--color-bone);
+  background: #fffdf7;
 }
 
 .btn-primary:hover,
@@ -315,7 +316,7 @@ section[id] {
   color: #0a1118;
 }
 .btn-solid::before {
-  background: var(--color-bone);
+  background: #fffdf7;
 }
 
 /* ===========================================================================
@@ -347,7 +348,7 @@ section[id] {
 
 .nav-link:hover,
 .nav-link[data-active="true"] {
-  color: var(--color-copper-light);
+  color: var(--color-copper);
 }
 
 .nav-link:hover::after,
@@ -360,13 +361,13 @@ section[id] {
    CARDS
    =========================================================================== */
 @utility hairline {
-  border: 1px solid rgba(239, 234, 226, 0.11);
+  border: 1px solid rgba(35, 27, 18, 0.14);
 }
 
 @utility glass {
-  background: rgba(16, 20, 19, 0.55);
+  background: rgba(255, 253, 248, 0.72);
   backdrop-filter: blur(14px);
-  border: 1px solid rgba(239, 234, 226, 0.09);
+  border: 1px solid rgba(35, 27, 18, 0.1);
 }
 
 /* Accent rule that expands on hover */
@@ -375,7 +376,7 @@ section[id] {
   display: block;
   height: 1px;
   width: 100%;
-  background: rgba(239, 234, 226, 0.14);
+  background: rgba(35, 27, 18, 0.16);
   overflow: hidden;
 }
 .accent-rule::after {
@@ -435,9 +436,34 @@ section[id] {
 }
 
 .site-header[data-scrolled="true"] {
-  background-color: rgba(7, 9, 8, 0.82);
+  background-color: rgba(250, 246, 239, 0.86);
   backdrop-filter: blur(16px);
-  border-bottom-color: rgba(239, 234, 226, 0.1);
+  border-bottom-color: rgba(35, 27, 18, 0.1);
+}
+
+/* Transparent header sits over dark hero photography — keep chrome light
+   until the paper-glass bar appears on scroll. Unlayered rules win over
+   Tailwind utilities by cascade order. */
+.site-header:not([data-scrolled="true"]) .nav-link {
+  color: #f6efe3;
+}
+.site-header:not([data-scrolled="true"]) .hamb-btn {
+  border-color: rgba(246, 239, 227, 0.35);
+  background: rgba(10, 17, 24, 0.4);
+}
+.site-header:not([data-scrolled="true"]) .hamb-line {
+  background: #f6efe3;
+}
+.site-header:not([data-scrolled="true"]) .tagline-tamil {
+  color: #ffc53d;
+}
+/* Menu-open X always sits over the paper menu overlay — keep it dark. */
+.site-header .hamb-btn[aria-expanded="true"] .hamb-line {
+  background: var(--color-bone);
+}
+.site-header .hamb-btn[aria-expanded="true"] {
+  border-color: rgba(35, 27, 18, 0.2);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /* ===========================================================================
@@ -449,7 +475,7 @@ section[id] {
   top: 0;
   width: 1px;
   height: 100%;
-  background: rgba(239, 234, 226, 0.12);
+  background: rgba(35, 27, 18, 0.14);
 }
 .timeline-fill {
   position: absolute;

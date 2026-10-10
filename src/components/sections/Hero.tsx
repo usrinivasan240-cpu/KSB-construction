@@ -141,7 +141,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <Image
           src={images.hero}
-          alt="Completed KSB home in daylight — colourful modern elevation"
+          alt="Construction site at dusk — steel, concrete and scaffolding"
           fill
           priority
           sizes="100vw"
@@ -152,7 +152,7 @@ export default function Hero() {
       </div>
       {/* cinematic grading */}
       <div
-        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.9)_0%,rgba(6,11,16,0.55)_38%,rgba(6,11,16,0.85)_78%,rgba(6,11,16,0.97)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,11,16,0.86)_0%,rgba(6,11,16,0.36)_38%,rgba(6,11,16,0.78)_78%,rgba(6,11,16,0.97)_100%)]"
         aria-hidden="true"
       />
       <div
@@ -180,7 +180,7 @@ export default function Hero() {
       <div className="shell relative z-10 flex flex-1 flex-col justify-end pb-28 pt-[calc(var(--header-h)+2.5rem)] sm:pb-32">
         <p
           data-hero-eyebrow
-          className="label-xs mb-5 flex flex-wrap items-center gap-2 !text-[0.5625rem] !tracking-[0.18em] text-bone/75 sm:gap-3 sm:!text-[0.625rem] sm:!tracking-[0.28em]"
+          className="label-xs mb-5 flex flex-wrap items-center gap-2 !text-[0.5625rem] !tracking-[0.18em] text-[#F6EFE3]/75 sm:gap-3 sm:!text-[0.625rem] sm:!tracking-[0.28em]"
         >
           <span className="inline-block h-px w-8 bg-copper align-middle" aria-hidden="true" />
           {heroCopy.eyebrow.map((part, i) => (
@@ -192,7 +192,7 @@ export default function Hero() {
         </p>
 
         <h1
-          className="display-xl max-w-[16ch] text-bone"
+          className="display-xl max-w-[16ch] text-[#F6EFE3]"
           style={{ fontFamily: "var(--font-display)" }}
         >
           {heroCopy.headline.map((line, i) => (
@@ -214,7 +214,7 @@ export default function Hero() {
         <div className="mt-7 flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
           <p
             data-hero-fade
-            className="lead max-w-xl !text-[1.05rem] !leading-relaxed !text-bone/80"
+            className="lead max-w-xl !text-[1.05rem] !leading-relaxed !text-[#E7DCC6]"
           >
             {heroCopy.supporting}
             <span className="tamil mt-3 block text-[0.95rem] !leading-relaxed text-copper-light/90">
@@ -229,7 +229,7 @@ export default function Hero() {
                 →
               </span>
             </Link>
-            <Link href="#projects" className="btn rounded-lg">
+            <Link href="#projects" className="btn rounded-lg !border-[#F6EFE3]/40 !text-[#F6EFE3]">
               <span aria-hidden="true" className="text-[0.65rem] text-copper">
                 ▶
               </span>
@@ -241,7 +241,7 @@ export default function Hero() {
         {/* -------------------------------------- credibility statistics */}
         <div
           data-hero-fade
-          className="relative mt-9 overflow-hidden rounded-2xl border border-copper/35 bg-ink-deep/70 backdrop-blur-md sm:mt-10"
+          className="relative mt-9 overflow-hidden rounded-2xl border border-copper/35 bg-[#0A1118]/85 backdrop-blur-md sm:mt-10"
         >
           <div
             aria-hidden="true"
@@ -266,7 +266,7 @@ export default function Hero() {
                   className="mt-1 h-9 w-9 shrink-0 text-copper sm:h-10 sm:w-10"
                 />
                 <div className="flex min-w-0 flex-col">
-                  <dt className="label-xs order-2 mt-2 leading-[1.7] text-bone/65">
+                  <dt className="label-xs order-2 mt-2 leading-[1.7] text-[#B7AB96]">
                     {s.label}
                   </dt>
                   <dd className="order-1 font-display text-4xl leading-none text-copper sm:text-5xl">
@@ -295,11 +295,11 @@ export default function Hero() {
           >
             <span
               aria-hidden="true"
-              className="relative flex h-9 w-[1.4rem] justify-center rounded-full border border-bone/30 pt-2"
+              className="relative flex h-9 w-[1.4rem] justify-center rounded-full border border-[#F6EFE3]/30 pt-2"
             >
               <span className="h-1.5 w-1 animate-bounce rounded-full bg-copper" />
             </span>
-            <span className="label-xs text-mist-dim transition-colors duration-300 group-hover:text-copper-light">
+            <span className="label-xs text-[#A89D89] transition-colors duration-300 group-hover:text-copper-light">
               {heroCopy.scroll}
             </span>
             <span

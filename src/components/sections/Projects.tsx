@@ -62,7 +62,7 @@ export default function Projects() {
                 <span>BUILT WITH</span>
               </span>
               <span data-reveal-line className="block">
-                <span className="text-copper-light">PURPOSE.</span>
+                <span className="text-copper-deep">PURPOSE.</span>
               </span>
             </h2>
           </div>
@@ -105,11 +105,11 @@ export default function Projects() {
 
               {/* index + arrow */}
               <div className="absolute inset-x-0 top-0 flex items-start justify-between p-6">
-                <span className="font-display text-5xl leading-none text-bone/70 transition-colors duration-500 group-hover:text-copper-light">
+                <span className="font-display text-5xl leading-none text-[#F6EFE3]/70 transition-colors duration-500 group-hover:text-copper-light">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span
-                  className="flex h-12 w-12 items-center justify-center border border-bone/30 bg-ink-deep/40 text-bone backdrop-blur-sm transition-all duration-500 group-hover:border-copper group-hover:bg-copper group-hover:text-ink"
+                  className="flex h-12 w-12 items-center justify-center border border-[#F6EFE3]/30 bg-[#0A1118]/40 text-[#F6EFE3] backdrop-blur-sm transition-all duration-500 group-hover:border-copper group-hover:bg-copper group-hover:text-coal"
                   aria-hidden="true"
                 >
                   <span className="inline-block transition-transform duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1">
@@ -124,14 +124,14 @@ export default function Projects() {
                 <div className="flex flex-wrap items-end justify-between gap-4">
                   <div className="min-w-0">
                     <p className="label-xs mb-3 text-copper-light">{p.type}</p>
-                    <h3 className="text-xl font-bold uppercase tracking-[0.06em] text-bone transition-transform duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1.5 sm:text-2xl">
+                    <h3 className="text-xl font-bold uppercase tracking-[0.06em] text-[#F6EFE3] transition-transform duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1.5 sm:text-2xl">
                       {p.title}
                     </h3>
-                    <p className="mt-2 text-sm uppercase tracking-[0.18em] text-mist-dim">
+                    <p className="mt-2 text-sm uppercase tracking-[0.18em] text-[#B7AB96]">
                       {p.location}
                     </p>
                   </div>
-                  <span className="shrink-0 border border-bone/25 px-3 py-1.5 label-xs text-mist transition-colors duration-500 group-hover:border-copper group-hover:text-copper-light">
+                  <span className="shrink-0 border border-[#F6EFE3]/25 px-3 py-1.5 label-xs text-[#CFC3AF] transition-colors duration-500 group-hover:border-copper group-hover:text-copper-light">
                     {p.status}
                   </span>
                 </div>

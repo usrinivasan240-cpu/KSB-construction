@@ -59,7 +59,7 @@ export default function GalleryPage() {
             <span className="mr-3 inline-block h-px w-8 bg-copper align-middle" />
             Gallery
           </p>
-          <h1 className="display-lg max-w-[14ch] text-bone">
+          <h1 className="display-lg max-w-[14ch] text-[#F6EFE3]">
             <span data-reveal-line className="block">
               <span>REAL HOMES.</span>
             </span>
@@ -67,7 +67,7 @@ export default function GalleryPage() {
               <span className="text-copper-light">REAL SITES.</span>
             </span>
           </h1>
-          <p data-reveal className="lead mt-7 max-w-xl">
+          <p data-reveal className="lead mt-7 max-w-xl !text-[#D9CFBC]">
             {galleryImages.length} photographs from genuine KSB builds — night
             elevations, living spaces and finishing stages. No renders, no stock.
           </p>
@@ -78,7 +78,7 @@ export default function GalleryPage() {
                 →
               </span>
             </Link>
-            <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="btn rounded-lg">
+            <a href={whatsappUrl()} target="_blank" rel="noopener noreferrer" className="btn rounded-lg !border-[#F6EFE3]/40 !text-[#F6EFE3]">
               WhatsApp us
             </a>
           </div>

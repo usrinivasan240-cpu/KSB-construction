@@ -31,7 +31,7 @@ export default function Footer() {
               height={489}
               className="h-16 w-auto"
             />
-            <p className="tamil mt-5 text-[0.95rem] leading-relaxed text-copper-light">
+            <p className="tamil mt-5 text-[0.95rem] leading-relaxed text-copper-deep">
               {siteConfig.tagline}
             </p>
             <p className="mt-1 text-xs uppercase tracking-[0.2em] text-mist-dim">
@@ -68,7 +68,7 @@ export default function Footer() {
                 <li key={s.id}>
                   <Link
                     href={hrefFor("#services")}
-                    className="text-sm text-mist transition-colors duration-300 hover:text-copper-light"
+                    className="text-sm text-mist transition-colors duration-300 hover:text-copper"
                   >
                     {s.title}
                   </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
               <li>
                 <a
                   href={siteConfig.phoneHref}
-                  className="transition-colors duration-300 hover:text-copper-light"
+                  className="transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
@@ -93,7 +93,7 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="transition-colors duration-300 hover:text-copper-light"
+                  className="transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.email}
                 </a>
@@ -119,7 +119,7 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex border border-bone/15 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-mist transition-colors duration-300 hover:border-copper hover:text-copper-light"
+                    className="inline-flex border border-bone/15 px-3 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-mist transition-colors duration-300 hover:border-copper hover:text-copper"
                   >
                     {label}
                   </a>
@@ -137,7 +137,7 @@ export default function Footer() {
               <li key={p.id}>
                 <Link
                   href={`/projects/${p.slug}`}
-                  className="text-xs uppercase tracking-[0.16em] text-mist-dim transition-colors duration-300 hover:text-copper-light"
+                  className="text-xs uppercase tracking-[0.16em] text-mist-dim transition-colors duration-300 hover:text-copper"
                 >
                   {p.title}
                 </Link>

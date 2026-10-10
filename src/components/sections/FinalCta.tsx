@@ -64,7 +64,7 @@ export default function FinalCta() {
           <span className="inline-block h-px w-8 bg-copper" aria-hidden="true" />
         </p>
 
-        <h2 className="display-xl mx-auto max-w-[15ch] text-bone">
+        <h2 className="display-xl mx-auto max-w-[15ch] text-[#F6EFE3]">
           {finalCtaCopy.headline.map((line, i) => (
             <span key={line} data-reveal-line className="block">
               <span className={i === 2 ? "text-copper-light" : undefined}>{line}</span>
@@ -72,7 +72,7 @@ export default function FinalCta() {
           ))}
         </h2>
 
-        <p className="lead mx-auto mt-8 max-w-2xl !text-bone/75" data-reveal>
+        <p className="lead mx-auto mt-8 max-w-2xl !text-[#E7DCC6]" data-reveal>
           {finalCtaCopy.supporting}
         </p>
 
@@ -91,7 +91,7 @@ export default function FinalCta() {
             href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn sm:min-w-[16rem]"
+            className="btn rounded-lg !border-[#F6EFE3]/40 !text-[#F6EFE3] sm:min-w-[16rem]"
           >
             {finalCtaCopy.secondary}
             <span className="btn-arrow" aria-hidden="true">
@@ -100,9 +100,9 @@ export default function FinalCta() {
           </a>
         </div>
 
-        <p className="label-xs mt-9 text-mist-dim" data-reveal>
+        <p className="label-xs mt-9 text-[#A89D89]" data-reveal>
           Or call{" "}
-          <a href={siteConfig.phoneHref} className="text-bone hover:text-copper-light">
+          <a href={siteConfig.phoneHref} className="text-[#F6EFE3] hover:text-copper-light">
             {siteConfig.phoneDisplay}
           </a>
         </p>

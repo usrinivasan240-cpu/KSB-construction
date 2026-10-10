@@ -75,9 +75,9 @@ export const siteConfig = {
 
   /* ------------------------------------------------------------- SOCIAL --- */
   social: {
-    instagram: "https://instagram.com/ksbconstructions", // [SAMPLE DATA]
-    facebook: "https://facebook.com/ksbconstructions", // [SAMPLE DATA]
-    youtube: "https://youtube.com/@ksbconstructions", // [SAMPLE DATA]
+    instagram: "https://www.instagram.com/reel/DXRggVXEd39/",
+    facebook: "https://www.facebook.com/people/KSB-Construction/100075842682204/",
+    youtube: "https://youtube.com/@ksb_constructions_er?si=JVgKOu3rbZbac1e6",
     // WhatsApp is derived from whatsappNumber — never set it manually.
   },
 

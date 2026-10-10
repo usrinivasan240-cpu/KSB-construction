@@ -51,7 +51,7 @@ export default function About() {
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-70" aria-hidden="true" />
       <div className="grid-bg-fine pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       <div
-        className="pointer-events-none absolute -left-40 top-1/4 h-[36rem] w-[36rem] rounded-full bg-forest/40 blur-[140px]"
+        className="pointer-events-none absolute -left-40 top-1/4 h-[36rem] w-[36rem] rounded-full bg-copper/15 blur-[140px]"
         aria-hidden="true"
       />
 
@@ -67,7 +67,7 @@ export default function About() {
             <h2 className="display-lg !text-[clamp(2.15rem,4.1vw,4.35rem)] text-bone">
               {aboutCopy.headline.map((line, i) => (
                 <span key={line} data-reveal-line className="block">
-                  <span className={i === 3 ? "text-copper-light" : undefined}>
+                  <span className={i === 3 ? "text-copper-deep" : undefined}>
                     {line}
                   </span>
                 </span>
@@ -97,23 +97,24 @@ export default function About() {
               <div className="relative aspect-[4/3] w-full overflow-hidden border border-bone/12">
                 <Image
                   src={images.about}
-                  alt="Structural frame under construction"
+                  alt="Completed KSB residence at night — lit modern elevation"
                   fill
                   sizes="(min-width:1024px) 50vw, 100vw"
                   quality={80}
-                  className="object-cover"
+                  className="object-cover saturate-[0.88] contrast-[1.04] brightness-[0.96]"
                   data-parallax="10"
                   data-reveal-img
                 />
                 <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(200deg,transparent_35%,rgba(6,11,16,0.75)_100%)]" />
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 border-t border-bone/15 bg-ink-deep/70 p-5 backdrop-blur-sm">
+                <div className="pointer-events-none absolute inset-0 bg-copper/[0.07] mix-blend-overlay" />
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 border-t border-[#F6EFE3]/15 bg-[#0A1118]/70 p-5 backdrop-blur-sm">
                   <div>
                     <p className="label-xs text-copper">Trichy • Tamil Nadu</p>
-                    <p className="mt-1.5 text-sm text-bone/85">
+                    <p className="mt-1.5 text-sm text-[#F6EFE3]/85">
                       Planning • Execution • Finishing
                     </p>
                   </div>
-                  <span className="font-display text-4xl leading-none text-bone/25">
+                  <span className="font-display text-4xl leading-none text-[#F6EFE3]/25">
                     KSB
                   </span>
                 </div>

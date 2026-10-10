@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [{ url: "/assets/photos/real/house-09-day-pink.jpg", width: 1440, height: 1440, alt: siteConfig.name }],
+    images: [{ url: "/assets/photos/hero.jpg", width: 2400, height: 1500, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: ["/assets/photos/real/house-09-day-pink.jpg"],
+    images: ["/assets/photos/hero.jpg"],
   },
   robots: {
     index: true,
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a1118",
+  themeColor: "#FAF6EF",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -73,7 +73,7 @@ const jsonLd = {
   description: siteConfig.description,
   url: siteConfig.url,
   logo: `${siteConfig.url}/assets/ksb-logo-official.png`,
-  image: `${siteConfig.url}/assets/photos/real/house-09-day-pink.jpg`,
+  image: `${siteConfig.url}/assets/photos/hero.jpg`,
   slogan: siteConfig.taglineTranslated,
   foundingDate: "2019",
   telephone: siteConfig.phoneDisplay,
@@ -140,7 +140,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[9999] focus:bg-copper focus:px-5 focus:py-3 focus:text-xs focus:font-bold focus:uppercase focus:tracking-widest focus:text-ink"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[9999] focus:bg-copper focus:px-5 focus:py-3 focus:text-xs focus:font-bold focus:uppercase focus:tracking-widest focus:text-coal"
         >
           Skip to content
         </a>

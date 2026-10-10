@@ -53,7 +53,7 @@ export default function Materials() {
             <h2 className="display-lg text-bone">
               {materialsCopy.headline.map((line, i) => (
                 <span key={line} data-reveal-line className="block">
-                  <span className={i === 2 ? "text-copper-light" : undefined}>
+                  <span className={i === 2 ? "text-copper-deep" : undefined}>
                     {line}
                   </span>
                 </span>
@@ -76,7 +76,7 @@ export default function Materials() {
                 i % 3 === 1 ? "md:mt-8" : ""
               }`}
             >
-              <div className="relative aspect-[3/4] overflow-hidden">
+              <div className="relative aspect-[3/4] overflow-hidden bg-[#0A1118]">
                 <div
                   className="absolute left-0 right-0 overflow-hidden"
                   style={{ top: "-9%", bottom: "-9%" }}
@@ -96,10 +96,10 @@ export default function Materials() {
 
               <figcaption className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
                 <span className="block h-px w-8 origin-left scale-x-100 bg-copper transition-transform duration-500 group-hover:scale-x-[3]" />
-                <h3 className="mt-3 text-sm font-bold uppercase tracking-[0.2em] text-bone sm:text-base">
+                <h3 className="mt-3 text-sm font-bold uppercase tracking-[0.2em] text-[#F6EFE3] sm:text-base">
                   {m.title}
                 </h3>
-                <p className="mt-1 text-[0.7rem] uppercase tracking-[0.14em] text-mist-dim">
+                <p className="mt-1 text-[0.7rem] uppercase tracking-[0.14em] text-[#B7AB96]">
                   {m.subtitle}
                 </p>
               </figcaption>

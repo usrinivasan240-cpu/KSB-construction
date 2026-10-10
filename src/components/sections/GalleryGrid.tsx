@@ -61,8 +61,8 @@ export default function GalleryGrid() {
             aria-pressed={filter === f}
             className={`border px-6 py-3 text-[0.65rem] font-bold uppercase tracking-[0.22em] transition-all duration-400 ${
               filter === f
-                ? "border-copper bg-copper text-ink"
-                : "border-bone/20 text-bone hover:border-copper/70 hover:text-copper-light"
+                ? "border-copper bg-copper text-coal"
+                : "border-bone/20 text-bone hover:border-copper/70 hover:text-copper-deep"
             }`}
           >
             {f}
@@ -102,7 +102,7 @@ export default function GalleryGrid() {
                 />
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-5">
-                <span className="text-sm font-bold uppercase tracking-[0.14em] text-bone">
+                <span className="text-sm font-bold uppercase tracking-[0.14em] text-[#F6EFE3]">
                   {g.title}
                 </span>
                 <span className="label-xs shrink-0 border border-copper/50 px-2.5 py-1 text-copper-light">
@@ -111,7 +111,7 @@ export default function GalleryGrid() {
               </figcaption>
               <span
                 aria-hidden="true"
-                className="absolute right-5 top-5 flex h-10 w-10 translate-y-1 items-center justify-center border border-bone/25 bg-ink-deep/60 text-bone opacity-0 backdrop-blur-sm transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+                className="absolute right-5 top-5 flex h-10 w-10 translate-y-1 items-center justify-center border border-[#F6EFE3]/25 bg-[#0A1118]/60 text-[#F6EFE3] opacity-0 backdrop-blur-sm transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
               >
                 ⤢
               </span>
@@ -132,26 +132,26 @@ export default function GalleryGrid() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35 }}
-            className="fixed inset-0 z-[900] flex flex-col bg-ink-deep/97 backdrop-blur-md"
+            className="fixed inset-0 z-[900] flex flex-col bg-[#0A1118]/97 backdrop-blur-md"
             onClick={close}
           >
             <div
               className="shell flex items-center justify-between py-5"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="label-xs text-mist-dim">
+              <span className="label-xs text-[#A89D89]">
                 <span className="text-copper">
                   {String((lightbox ?? 0) + 1).padStart(2, "0")}
                 </span>
                 <span className="mx-1">/</span>
                 {String(items.length).padStart(2, "0")}
-                <span className="ml-4 hidden text-bone/80 sm:inline">{active.title}</span>
+                <span className="ml-4 hidden text-[#F6EFE3]/80 sm:inline">{active.title}</span>
               </span>
               <button
                 type="button"
                 onClick={close}
                 aria-label="Close viewer"
-                className="flex h-11 w-11 items-center justify-center border border-bone/25 text-xl text-bone transition-colors hover:border-copper hover:text-copper-light"
+                className="flex h-11 w-11 items-center justify-center border border-[#F6EFE3]/25 text-xl text-[#F6EFE3] transition-colors hover:border-copper hover:text-copper-light"
               >
                 ✕
               </button>
@@ -183,7 +183,7 @@ export default function GalleryGrid() {
                 type="button"
                 onClick={() => step(-1)}
                 aria-label="Previous image"
-                className="absolute left-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-bone/25 bg-ink-deep/70 text-xl text-bone backdrop-blur-sm transition-colors hover:border-copper hover:text-copper-light sm:left-6"
+                className="absolute left-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-[#F6EFE3]/25 bg-[#0A1118]/70 text-xl text-[#F6EFE3] backdrop-blur-sm transition-colors hover:border-copper hover:text-copper-light sm:left-6"
               >
                 ←
               </button>
@@ -191,13 +191,13 @@ export default function GalleryGrid() {
                 type="button"
                 onClick={() => step(1)}
                 aria-label="Next image"
-                className="absolute right-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-bone/25 bg-ink-deep/70 text-xl text-bone backdrop-blur-sm transition-colors hover:border-copper hover:text-copper-light sm:right-6"
+                className="absolute right-3 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-[#F6EFE3]/25 bg-[#0A1118]/70 text-xl text-[#F6EFE3] backdrop-blur-sm transition-colors hover:border-copper hover:text-copper-light sm:right-6"
               >
                 →
               </button>
             </div>
 
-            <p className="shell pb-6 text-center text-sm font-bold uppercase tracking-[0.16em] text-bone sm:hidden">
+            <p className="shell pb-6 text-center text-sm font-bold uppercase tracking-[0.16em] text-[#F6EFE3] sm:hidden">
               {active.title}
             </p>
           </motion.div>

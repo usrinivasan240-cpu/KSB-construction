@@ -129,7 +129,7 @@ export default function Contact() {
     <section id="contact" className="section-pad relative overflow-hidden bg-ink">
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
       <div
-        className="pointer-events-none absolute -left-32 bottom-0 h-[30rem] w-[30rem] rounded-full bg-forest/50 blur-[150px]"
+        className="pointer-events-none absolute -left-32 bottom-0 h-[30rem] w-[30rem] rounded-full bg-copper/15 blur-[150px]"
         aria-hidden="true"
       />
 
@@ -146,7 +146,7 @@ export default function Contact() {
               <span>LET&apos;S BUILD</span>
             </span>
             <span data-reveal-line className="block">
-              <span className="text-copper-light">TOGETHER.</span>
+              <span className="text-copper-deep">TOGETHER.</span>
             </span>
           </h2>
 
@@ -166,7 +166,7 @@ export default function Contact() {
               <dd>
                 <a
                   href={siteConfig.phoneHref}
-                  className="text-sm text-bone transition-colors duration-300 hover:text-copper-light"
+                  className="text-sm text-bone transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.phoneDisplay}
                 </a>
@@ -177,7 +177,7 @@ export default function Contact() {
               <dd className="min-w-0">
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="break-all text-sm text-bone transition-colors duration-300 hover:text-copper-light"
+                  className="break-all text-sm text-bone transition-colors duration-300 hover:text-copper"
                 >
                   {siteConfig.email}
                 </a>
@@ -190,7 +190,7 @@ export default function Contact() {
                   href={whatsappUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-bone transition-colors duration-300 hover:text-copper-light"
+                  className="text-sm text-bone transition-colors duration-300 hover:text-copper"
                 >
                   Chat with us →
                 </a>
@@ -218,13 +218,13 @@ export default function Contact() {
               title={`Map — ${siteConfig.addressDisplay}`}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="h-64 w-full grayscale-[0.35] contrast-[1.05] invert-[0.92] hue-rotate-180"
+              className="h-64 w-full grayscale-[0.25] sepia-[0.12] contrast-[1.02]"
             />
             <a
               href={siteConfig.mapLinkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="label-xs flex items-center justify-between border-t border-bone/12 px-4 py-3 text-mist-dim transition-colors duration-300 hover:text-copper-light"
+              className="label-xs flex items-center justify-between border-t border-bone/12 px-4 py-3 text-mist-dim transition-colors duration-300 hover:text-copper"
             >
               Open in Google Maps
               <span aria-hidden="true">↗</span>
@@ -282,7 +282,7 @@ export default function Contact() {
                       message: "",
                     });
                   }}
-                  className="mt-6 block text-xs uppercase tracking-[0.2em] text-mist-dim underline-offset-8 transition-colors duration-300 hover:text-copper-light hover:underline"
+                  className="mt-6 block text-xs uppercase tracking-[0.2em] text-mist-dim underline-offset-8 transition-colors duration-300 hover:text-copper hover:underline"
                 >
                   Send another enquiry
                 </button>
@@ -399,7 +399,7 @@ export default function Contact() {
                 </Field>
 
                 {status === "error" && error ? (
-                  <p className="border-l-2 border-copper pl-3 text-sm text-copper-light">
+                  <p className="border-l-2 border-copper pl-3 text-sm text-copper-deep">
                     {error}
                   </p>
                 ) : null}

@@ -78,7 +78,7 @@ export default function Process() {
                 <span>FROM IDEA</span>
               </span>
               <span data-reveal-line className="block">
-                <span className="text-copper-light">TO REALITY.</span>
+                <span className="text-copper-deep">TO REALITY.</span>
               </span>
             </h2>
           </div>

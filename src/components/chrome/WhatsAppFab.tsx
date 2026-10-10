@@ -58,7 +58,7 @@ export default function WhatsAppFab() {
         rel="noopener noreferrer"
         aria-label="Chat with KSB Constructions on WhatsApp"
         data-cursor="hover"
-        className="group fixed bottom-6 right-6 z-[750] hidden h-14 w-14 items-center justify-center rounded-full border border-copper/50 bg-copper text-ink shadow-[0_14px_40px_-12px_rgba(247,148,29,0.7)] transition-all duration-500 hover:bg-copper-light md:flex"
+        className="group fixed bottom-6 right-6 z-[750] hidden h-14 w-14 items-center justify-center rounded-full border border-copper/50 bg-copper text-coal shadow-[0_14px_40px_-12px_rgba(247,148,29,0.7)] transition-all duration-500 hover:bg-copper-light md:flex"
         style={{
           opacity: show ? 1 : 0,
           transform: show ? "scale(1)" : "scale(0.6)",

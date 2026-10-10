@@ -29,7 +29,7 @@ export default function Services() {
                 <span>WHAT WE</span>
               </span>
               <span data-reveal-line className="block">
-                <span className="text-copper-light">BUILD</span>
+                <span className="text-copper-deep">BUILD</span>
               </span>
             </h2>
           </div>
@@ -66,7 +66,7 @@ export default function Services() {
                   {s.number}
                 </span>
                 <span
-                  className="mt-3 flex h-11 w-11 items-center justify-center border border-bone/20 text-bone transition-all duration-500 group-hover:border-copper group-hover:bg-copper group-hover:text-ink"
+                  className="mt-3 flex h-11 w-11 items-center justify-center border border-bone/20 text-bone transition-all duration-500 group-hover:border-copper group-hover:bg-copper group-hover:text-coal"
                   aria-hidden="true"
                 >
                   <span className="inline-block transition-transform duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1">
@@ -78,17 +78,17 @@ export default function Services() {
               {/* bottom block */}
               <div className="relative mt-10">
                 <span className="accent-rule mb-6" aria-hidden="true" />
-                <h3 className="text-lg font-bold uppercase leading-tight tracking-[0.1em] text-bone transition-transform duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1.5 sm:text-xl">
+                <h3 className="text-lg font-bold uppercase leading-tight tracking-[0.1em] text-bone transition-all duration-500 ease-[var(--ease-arch)] group-hover:translate-x-1.5 group-hover:text-[#F5EEE1] sm:text-xl">
                   {s.title}
                 </h3>
-                <p className="mt-3 max-w-[38ch] text-sm leading-relaxed text-mist-dim transition-colors duration-500 group-hover:text-mist">
+                <p className="mt-3 max-w-[38ch] text-sm leading-relaxed text-mist-dim transition-colors duration-500 group-hover:text-[#CFC3AF]">
                   {s.description}
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
                   {s.highlights.map((h) => (
                     <li
                       key={h}
-                      className="label-xs text-copper/60 transition-colors duration-500 group-hover:text-copper-light"
+                      className="label-xs text-copper/60 transition-colors duration-500 group-hover:text-gilt"
                     >
                       {h}
                     </li>

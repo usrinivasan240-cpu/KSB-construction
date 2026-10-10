@@ -52,7 +52,7 @@ export default function Testimonials() {
                 <span>TRUSTED BY</span>
               </span>
               <span data-reveal-line className="block">
-                <span className="text-copper-light">OUR CLIENTS.</span>
+                <span className="text-copper-deep">OUR CLIENTS.</span>
               </span>
             </h2>
 
@@ -67,7 +67,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => go(index - 1)}
                 aria-label="Previous testimonial"
-                className="flex h-12 w-12 items-center justify-center border border-bone/20 text-bone transition-all duration-400 hover:border-copper hover:bg-copper hover:text-ink"
+                className="flex h-12 w-12 items-center justify-center border border-bone/20 text-bone transition-all duration-400 hover:border-copper hover:bg-copper hover:text-coal"
               >
                 ←
               </button>
@@ -75,7 +75,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => go(index + 1)}
                 aria-label="Next testimonial"
-                className="flex h-12 w-12 items-center justify-center border border-bone/20 text-bone transition-all duration-400 hover:border-copper hover:bg-copper hover:text-ink"
+                className="flex h-12 w-12 items-center justify-center border border-bone/20 text-bone transition-all duration-400 hover:border-copper hover:bg-copper hover:text-coal"
               >
                 →
               </button>
@@ -111,7 +111,7 @@ export default function Testimonials() {
                       }`}
                     >
                       <div
-                        className="mb-6 flex gap-1 text-gilt"
+                        className="mb-6 flex gap-1 text-copper"
                         aria-label="Five star review"
                       >
                         {Array.from({ length: 5 }).map((_, s) => (

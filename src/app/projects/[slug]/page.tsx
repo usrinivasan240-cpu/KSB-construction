@@ -92,7 +92,7 @@ export default async function ProjectPage({
         <div className="shell relative z-10">
           <Link
             href="/#projects"
-            className="group label-xs mb-9 inline-flex items-center gap-3 text-mist-dim transition-colors duration-300 hover:text-copper-light"
+            className="group label-xs mb-9 inline-flex items-center gap-3 text-[#B7AB96] transition-colors duration-300 hover:text-copper-light"
           >
             <span
               className="inline-block transition-transform duration-400 group-hover:-translate-x-1.5"
@@ -105,26 +105,26 @@ export default async function ProjectPage({
 
           <p className="label-xs mb-5 text-copper-light">{project.type}</p>
 
-          <h1 className="display-xl max-w-[18ch] text-bone" data-reveal-line>
+          <h1 className="display-xl max-w-[18ch] text-[#F6EFE3]" data-reveal-line>
             <span>{project.title}</span>
           </h1>
 
           <dl className="mt-10 grid gap-px border border-bone/15 bg-bone/10 sm:grid-cols-3">
-            <div className="bg-ink-deep/85 p-5 backdrop-blur-sm">
+            <div className="bg-[#0A1118]/85 p-5 backdrop-blur-sm">
               <dt className="label-xs text-copper/70">Location</dt>
-              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-bone">
+              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-[#F6EFE3]">
                 {project.location}
               </dd>
             </div>
-            <div className="bg-ink-deep/85 p-5 backdrop-blur-sm">
+            <div className="bg-[#0A1118]/85 p-5 backdrop-blur-sm">
               <dt className="label-xs text-copper/70">Project type</dt>
-              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-bone">
+              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-[#F6EFE3]">
                 {project.type}
               </dd>
             </div>
-            <div className="bg-ink-deep/85 p-5 backdrop-blur-sm">
+            <div className="bg-[#0A1118]/85 p-5 backdrop-blur-sm">
               <dt className="label-xs text-copper/70">Status</dt>
-              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-bone">
+              <dd className="mt-2 text-sm uppercase tracking-[0.16em] text-[#F6EFE3]">
                 {project.status}
               </dd>
             </div>
@@ -135,7 +135,7 @@ export default async function ProjectPage({
       {/* ========================================================= SUMMARY */}
       <section className="border-b border-bone/10 bg-ink">
         <div className="shell-narrow py-16 sm:py-24">
-          <p className="lead !text-[1.15rem] !leading-[1.7] !text-bone/85" data-reveal>
+          <p className="lead !text-[1.15rem] !leading-[1.7] !text-[#3A3128]" data-reveal>
             {project.summary}
           </p>
         </div>
@@ -173,7 +173,7 @@ export default async function ProjectPage({
                     data-reveal-img
                   />
                 </div>
-                <figcaption className="label-xs absolute bottom-0 left-0 right-0 bg-[linear-gradient(180deg,transparent,rgba(6,11,16),0.9))] p-5 text-mist-dim sm:p-7">
+                <figcaption className="label-xs absolute bottom-0 left-0 right-0 bg-[linear-gradient(180deg,transparent,rgba(6,11,16),0.9))] p-5 text-[#B9AE9C] sm:p-7">
                   {project.title} — {block.label}
                 </figcaption>
               </figure>

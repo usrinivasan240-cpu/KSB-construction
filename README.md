@@ -27,7 +27,7 @@ The brand assets were **not present on disk**, so the site uses drop-in asset sl
 | What | Where | Status |
 | --- | --- | --- |
 | Logo (all backgrounds) | `public/assets/ksb-logo-official.png` | ✅ Official transparent logo (747×489) — header, footer, transition curtain, JSON-LD |
-| Hero image | `public/assets/photos/real/house-09-day-pink.jpg` | ✅ Real KSB home (pink/yellow day elevation) |
+| Hero image | `public/assets/photos/hero.jpg` | ✅ Cinematic construction-site photo |
 | About image | `public/assets/photos/about.jpg` | ✅ Real photography |
 | Final CTA background | `public/assets/photos/cta.jpg` | ✅ Real photography |
 | Service hover images | `public/assets/photos/service-*.jpg` (6) | ✅ Real photography, one per service |
@@ -117,11 +117,12 @@ src/
 
 | Token | Value | Source |
 | --- | --- | --- |
-| Background | `#0B0D0C` (`ink`) | neutral near-black |
-| Secondary | graphite grey (`forest` … `forest-4`, now grey not green) | logo grey `#A7A9AC` deepened |
-| Accent | logo orange `#F7941D` (`copper`), amber `#FFC53D` (`copper-light`) | sampled from official logo |
-| Spark | logo yellow `#FFD91A` (`gilt`) — numerals, stars only | sampled from official logo |
-| Text | `bone #EFEAE2`, `mist`, `mist-dim` | warm neutrals |
+| Backgrounds | warm paper `#FAF6EF` (`ink`), sand `#EFE7D8` (`ink-deep`), white cards (`ink-soft`) | light architectural theme |
+| Lines/borders | warm greige (`ink-line`, `hairline`, grid) | subtle on paper |
+| Text | espresso `#231B12` (`bone`), warm greys (`mist`, `mist-dim`) | high contrast on paper |
+| Accent | logo orange `#DE7F16` (`copper`, deepened for light), deep `#B45A10` | sampled from official logo |
+| Dark-photo accents | amber `#FFC53D` (`copper-light`), yellow `#FFD91A` (`gilt`) — photo overlays only | sampled from official logo |
+| Photo blocks | hero, project cards, galleries, CTA, lightbox stay dark-cinematic with light text | contrast over photography |
 | Type | **Inter** (UI) + **Playfair Display** (architectural headlines) + Tamil fallback stack |
 | Motion ease | `--ease-arch: cubic-bezier(.16,1,.3,1)` |
 

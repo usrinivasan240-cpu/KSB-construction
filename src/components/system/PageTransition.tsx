@@ -118,7 +118,7 @@ export default function PageTransition() {
   return (
     <div
       ref={overlay}
-      className="page-curtain fixed inset-0 z-[9000] flex items-center justify-center bg-ink-deep"
+      className="page-curtain fixed inset-0 z-[9000] flex items-center justify-center bg-[#0A1118]"
       style={{ clipPath: "inset(0% 0 0% 0)" }}
       aria-hidden
     >
@@ -134,7 +134,7 @@ export default function PageTransition() {
           priority
           className="h-auto w-[150px] sm:w-[180px]"
         />
-        <span className="label-xs text-mist-dim">நம்பிக்கை | தரம் | திறமை</span>
+        <span className="label-xs text-[#A89D89]">நம்பிக்கை | தரம் | திறமை</span>
         <span className="h-px w-24 bg-copper/50" />
       </div>
     </div>

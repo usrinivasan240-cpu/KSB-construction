@@ -7,7 +7,7 @@ export default function WhyKsb() {
   return (
     <section
       id="why"
-      className="section-pad noise-layer relative overflow-hidden bg-forest"
+      className="section-pad noise-layer relative overflow-hidden bg-ink-deep"
     >
       <div className="grid-bg pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
       <div
@@ -50,14 +50,14 @@ export default function WhyKsb() {
             >
               {/* oversized index */}
               <span
-                className="pointer-events-none absolute -right-2 -top-6 select-none font-display text-[7rem] leading-none text-bone/[0.05] transition-all duration-700 group-hover:text-copper/25 group-hover:-translate-y-1"
+                className="pointer-events-none absolute -right-2 -top-6 select-none font-display text-[7rem] leading-none text-coal/[0.07] transition-all duration-700 group-hover:text-copper/25 group-hover:-translate-y-1"
                 aria-hidden="true"
               >
                 {r.number}
               </span>
 
               <div className="relative">
-                <span className="label-xs text-copper/70 transition-colors duration-500 group-hover:text-copper-light">
+                <span className="label-xs text-copper/70 transition-colors duration-500 group-hover:text-copper-deep">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-5 text-2xl font-bold uppercase tracking-[0.04em] text-bone sm:text-[1.75rem]">
